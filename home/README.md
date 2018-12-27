@@ -6,10 +6,10 @@ this directory contains the dotfiles for the home machine.
 
 the following packages needs to be installed on the machine
 
-    * make
-    * neovim (e. g. appimage version)
-    * tmux
-    * zsh
+* make
+* neovim (e. g. appimage version)
+* tmux
+* zsh
 
 ## installation
 
