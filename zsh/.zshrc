@@ -111,3 +111,5 @@ if [ -e $HOME/.exports ]; then
 fi
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+[ -d ~/.nix-profile/ ] && source ~/.nix-profile/etc/profile.d/nix.sh
