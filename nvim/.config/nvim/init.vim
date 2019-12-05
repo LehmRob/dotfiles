@@ -87,7 +87,7 @@ if has('nvim')
 endif
 call plug#end()
 
-set background=light
+set background=dark
 
 " Misc settings
 let g:go_fmt_command = "goimports"
