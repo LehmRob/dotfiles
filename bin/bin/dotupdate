@@ -1,0 +1,3 @@
+#!/bin/sh
+
+cd $DOT && git commit -a -m "Update dotfiles" && git push origin master

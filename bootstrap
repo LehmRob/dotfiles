@@ -1,0 +1,46 @@
+#!/bin/sh
+
+install_zsh() {
+    # installing oh-my-zsh
+    if [ ! -d $HOME/.oh-my-zsh ]; then
+        sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+    fi
+
+    if [ ! -L $HOME/.zshrc ]; then
+        rm $HOME/.zshrc
+    fi
+    if [ ! -L $HOME/.alias ]; then
+        rm $HOME/.alias
+    fi
+    if [ ! -L $HOME/.exports ]; then
+        rm $HOME/.exports
+    fi
+    stow -R -t $HOME zsh
+}
+
+install_nvim() {
+    if [ ! -f $HOME/.local/share/nvim/site/autoload/plug.vim ]; then
+        curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+            https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    fi
+    if [ ! -L $HOME/.config/nvim/init.vim ]; then
+        rm $HOME/.config/nvim/init.vim
+    fi
+    stow -R -t $HOME nvim 
+}
+
+install_tmux() {
+    if [ ! -L $HOME/.tmux.conf ]; then
+        rm $HOME/.tmux.conf
+    fi
+    stow -R -t $HOME tmux
+}
+
+install_bin() {
+    stow -R -t $HOME bin
+}
+
+install_zsh
+install_nvim
+install_tmux
+install_bin
