@@ -1,3 +1,4 @@
 alias t="tmux -2"
 alias nv="nvim"
 alias vim="nvim"
+alias ls="ls --color=never"
