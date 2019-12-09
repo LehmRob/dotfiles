@@ -80,7 +80,7 @@ Plug 'junegunn/fzf.vim'
 
 " color schemes
 Plug 'andreypopp/vim-colors-plain'
-Plug 'lifepillar/vim-solarized8'
+Plug 'NLKNguyen/papercolor-theme'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -89,7 +89,7 @@ call plug#end()
 
 set termguicolors
 set background=light
-colorscheme solarized8
+colorscheme PaperColor
 
 " Misc settings
 let g:go_fmt_command = "goimports"
