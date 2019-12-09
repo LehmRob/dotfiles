@@ -79,15 +79,17 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " color schemes
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'andreypopp/vim-colors-plain'
+Plug 'lifepillar/vim-solarized8'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 call plug#end()
 
+set termguicolors
 set background=light
+colorscheme solarized8
 
 " Misc settings
 let g:go_fmt_command = "goimports"
