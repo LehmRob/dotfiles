@@ -2,3 +2,9 @@ alias t="tmux -2"
 alias nv="nvim"
 alias vim="nvim"
 alias ls="ls --color=never"
+alias sshno='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+alias scpno='scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+alias ssh6n='ssh -6 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+alias scp6n='scp -6 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
+alias ssh6='ssh -6'
+alias scp6='scp -6'
