@@ -28,7 +28,7 @@ set backupdir=~/.vim/tmp/backup//
 set backup
 set noswapfile
 
-set listchars=tab:▸\ ,eol:¬,extends:❯,precedes:❮,trail:·
+set list listchars=tab:»·,eol:¬,extends:❯,precedes:❮,trail:·
 
 au FileType make setlocal noexpandtab
 au FileType cpp set expandtab
