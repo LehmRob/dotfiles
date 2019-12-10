@@ -79,15 +79,17 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 
 " color schemes
-Plug 'rafi/awesome-vim-colorschemes'
 Plug 'andreypopp/vim-colors-plain'
+Plug 'NLKNguyen/papercolor-theme'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 call plug#end()
 
+set termguicolors
 set background=light
+colorscheme PaperColor
 
 " Misc settings
 let g:go_fmt_command = "goimports"
@@ -159,13 +161,13 @@ endfunction
 set laststatus=2
 set statusline=
 set statusline+=%0*\ %{toupper(g:currentmode[mode()])}   " Current mode
-set statusline+=%8*\ [%n]                                " buffernr
-set statusline+=%8*\ %{GitInfo()}                        " Git Branch name
-set statusline+=%8*\ %<%F\ %{ReadOnly()}\ %m\ %w\        " File+path
+set statusline+=%0*\ [%n]                                " buffernr
+set statusline+=%0*\ %{GitInfo()}                        " Git Branch name
+set statusline+=%0*\ %<%F\ %{ReadOnly()}\ %m\ %w\        " File+path
 set statusline+=%#warningmsg#
 set statusline+=%*
-set statusline+=%9*\ %=                                  " Space
-set statusline+=%8*\ %y\                                 " FileType
-set statusline+=%7*\ %{(&fenc!=''?&fenc:&enc)}\[%{&ff}]\ " Encoding & Fileformat
-set statusline+=%8*\ %-3(%{FileSize()}%)                 " File size
+set statusline+=%0*\ %=                                  " Space
+set statusline+=%0*\ %y\                                 " FileType
+set statusline+=%0*\ %{(&fenc!=''?&fenc:&enc)}\[%{&ff}]\ " Encoding & Fileformat
+set statusline+=%0*\ %-3(%{FileSize()}%)                 " File size
 set statusline+=%0*\ %3p%%\ \ %l:\ %3c\                 " Rownumber/total (%)
