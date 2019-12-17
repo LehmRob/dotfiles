@@ -53,16 +53,15 @@ inoremap jk <ESC>
 let mapleader = ","
 map <Leader>s :split<cr>
 map <Leader>v :vsplit<cr>
-map <Leader>w <C-w>w
+map <Leader>w :w<cr>
 map <Leader>a :q!<cr>
-map <Leader>s :w<cr>
 map <Leader>q :wq<cr>
-map <Leader>t :tabedit<space>
 map <Leader>nt :NERDTreeToggle<CR>
-map <Leader>ct :!ctags-exuberant -R -f .tags --exclude=.git --exclude=build .<CR>
 map <Leader>f :Files<CR>
 map <Leader>l :Lines<CR>
 map <Leader>b :Buffers<CR>
+" clear highlighted search
+map <Leader>u :<C-u>nohlsearch<CR><C-l>
 imap <a-,> <ESC>
 
 let g:python3_host_prog = '/usr/bin/python3'
