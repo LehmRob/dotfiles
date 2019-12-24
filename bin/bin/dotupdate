@@ -1,4 +1,6 @@
 #!/bin/sh
 
-cd $DOT && git pull origin master
-cd $DOT && git pull origin master && git commit -a -m "Update dotfiles" && git push origin master
+cd $DOT && \
+    git commit -a -m "Update dotfiles" && \
+    git pull origin master \
+    git push origin master
