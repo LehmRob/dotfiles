@@ -39,10 +39,10 @@ au FileType c set sw=4
 au FileType c set ts=4
 au FileType c set sts=4
 au FileType c ClangFormatAutoDisable
+au FileType python setlocal noexpandtab
 au FileType python set sw=4
 au FileType python set ts=4
 au FileType python set sts=4
-au FileType python setlocal noexpandtab
 
 filetype indent on
 

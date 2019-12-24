@@ -3,6 +3,8 @@ export EDITOR='nvim'
 export DOT=$HOME/dotfiles
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/Work/go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin
+export POETRYPATH=$HOME/.poetry
+
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin:$POETRYPATH/bin
 
 export TERM=screen-256color
