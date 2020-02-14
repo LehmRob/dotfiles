@@ -40,7 +40,16 @@ install_bin() {
     stow -R -t $HOME bin
 }
 
+install_alactritty() {
+    if [ ! -L $HOME/.config/alacritty/alacritty.yml ]; then
+        rm $HOME/.config/alacritty/alacritty.yml
+    fi
+
+    stow -R -t $HOME alacritty
+}
+
 install_zsh
 install_nvim
 install_tmux
 install_bin
+install_alactritty
