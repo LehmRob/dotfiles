@@ -48,8 +48,18 @@ install_alactritty() {
     stow -R -t $HOME alacritty
 }
 
+install_bash() {
+    if [ ! eL $HOME/.bashrc ]; then
+        mv $HOME/.bashrc $HOME/.bashrc.backup
+    fi
+
+    stow -R -t $HOME bash
+}
+
+
 install_zsh
 install_nvim
 install_tmux
 install_bin
 install_alactritty
+install_bash
