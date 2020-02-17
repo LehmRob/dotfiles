@@ -49,7 +49,7 @@ install_alactritty() {
 }
 
 install_bash() {
-    if [ ! eL $HOME/.bashrc ]; then
+    if [ ! -L $HOME/.bashrc ]; then
         mv $HOME/.bashrc $HOME/.bashrc.backup
     fi
 
