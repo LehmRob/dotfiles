@@ -42,7 +42,7 @@ install_bin() {
 
 install_alactritty() {
     if [ ! -L $HOME/.config/alacritty/alacritty.yml ]; then
-        rm $HOME/.config/alacritty/alacritty.yml
+        rm -rf $HOME/.config/alacritty
     fi
 
     stow -R -t $HOME alacritty
