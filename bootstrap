@@ -56,6 +56,12 @@ install_bash() {
     stow -R -t $HOME bash
 }
 
+install_micro() {
+    if [ ! -L $HOME/.config/micro/settings.json ]; then
+        rm -f $HOME/.config/micro/settings.json
+    fi
+    stow -R -t $HOME micro
+}
 
 install_zsh
 install_nvim
@@ -63,3 +69,4 @@ install_tmux
 install_bin
 install_alactritty
 install_bash
+install_micro
