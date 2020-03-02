@@ -86,6 +86,8 @@ Plug 'junegunn/fzf.vim'
 " color schemes
 Plug 'andreypopp/vim-colors-plain'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'rakr/vim-colors-rakr'
+Plug 'endel/vim-github-colorscheme'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -94,7 +96,7 @@ call plug#end()
 
 set termguicolors
 set background=light
-colorscheme plain
+colorscheme rakr
 
 " Misc settings
 let g:go_fmt_command = "goimports"
