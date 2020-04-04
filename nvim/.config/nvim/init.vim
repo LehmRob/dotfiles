@@ -96,7 +96,7 @@ call plug#end()
 
 set termguicolors
 set background=light
-colorscheme rakr
+colorscheme PaperColor
 
 " Misc settings
 let g:go_fmt_command = "goimports"
