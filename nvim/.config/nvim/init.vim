@@ -79,6 +79,7 @@ Plug 'ervandew/supertab'
 Plug 'rhysd/vim-clang-format'
 Plug 'rking/ag.vim'
 Plug 'fatih/vim-go'
+Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
