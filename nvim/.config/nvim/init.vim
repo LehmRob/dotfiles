@@ -31,6 +31,8 @@ set noswapfile
 "set list listchars=tab:»\ \,eol:¬,extends:❯,precedes:❮,trail:·
 set list listchars=tab:\|\ ,eol:¬,extends:❯,precedes:❮,trail:·
 
+" activate mouse for normal and visual mode
+set mouse=nv
 
 au FileType make setlocal noexpandtab
 au FileType cpp set expandtab
@@ -58,6 +60,7 @@ map <Leader>v :vsplit<cr>
 map <Leader>w :w<cr>
 map <Leader>a :q!<cr>
 map <Leader>q :wq<cr>
+map <Leader>m :make<cr>
 map <Leader>nt :NERDTreeToggle<CR>
 map <Leader>f :Files<CR>
 map <Leader>l :Lines<CR>
