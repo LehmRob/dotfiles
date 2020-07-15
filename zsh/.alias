@@ -1,4 +1,5 @@
-alias t="tmux -2"
+alias t="tmux -2 -u"
+alias tns="tmux -2 -u new-session -s"
 alias nv="nvim"
 alias vim="nvim"
 alias ls="ls --color=never"
