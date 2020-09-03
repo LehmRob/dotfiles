@@ -51,7 +51,7 @@ au FileType python set sts=4
 filetype indent on
 
 " Some key mappings
-inoremap jk <ESC>
+inoremap jj <ESC>
 
 
 let mapleader = ","
