@@ -56,7 +56,9 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-export PS1="[\u@\h]:\W \\$> "
+#export PS1="[\u@\h]:\W \\$> "
+export PS1='$(whoami):\w 
+\\$> '
 unset color_prompt force_color_prompt
 
 
@@ -118,3 +120,6 @@ fi
 #bind '"jk":"\e"'
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"
