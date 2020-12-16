@@ -63,6 +63,13 @@ install_micro() {
     stow -R -t $HOME micro
 }
 
+install_vim() {
+    if [ ! -L $HOME/.vimrc ]; then
+        rm -f $HOME/.vimrc
+    fi
+    stow -R -t $HOME vimrc
+}
+
 install_zsh
 install_nvim
 install_tmux
@@ -70,3 +77,4 @@ install_bin
 install_alactritty
 install_bash
 install_micro
+install_vim

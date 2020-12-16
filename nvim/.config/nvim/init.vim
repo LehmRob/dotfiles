@@ -53,7 +53,6 @@ filetype indent on
 " Some key mappings
 inoremap jj <ESC>
 
-
 let mapleader = ","
 map <Leader>s :split<cr>
 map <Leader>v :vsplit<cr>
