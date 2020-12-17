@@ -1,7 +1,7 @@
 alias t="tmux -2 -u"
 alias tns="tmux -2 -u new-session -s"
 alias nv="nvim"
-alias vim="nvim"
+alias vi="vim"
 alias ls="ls --color=never"
 alias sshno='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 alias scpno='scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
