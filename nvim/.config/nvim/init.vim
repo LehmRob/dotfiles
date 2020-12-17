@@ -53,7 +53,6 @@ filetype indent on
 " Some key mappings
 inoremap jj <ESC>
 
-
 let mapleader = ","
 map <Leader>s :split<cr>
 map <Leader>v :vsplit<cr>
@@ -67,7 +66,7 @@ map <Leader>l :Lines<CR>
 map <Leader>b :Buffers<CR>
 map <Leader>t :tabedit<CR>
 map <Leader>cf :ClangFormat<CR>
-
+map <Leader>u :source ~/.config/nvim/init.vim<CR>
 
 " clear highlighted search
 map <Leader>u :<C-u>nohlsearch<CR><C-l>
@@ -90,17 +89,18 @@ Plug 'junegunn/fzf.vim'
 " color schemes
 Plug 'andreypopp/vim-colors-plain'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'rakr/vim-colors-rakr'
 Plug 'endel/vim-github-colorscheme'
+Plug 'junegunn/seoul256.vim'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 call plug#end()
 
+colorscheme PaperColor 
 set termguicolors
 set background=light
-colorscheme PaperColor
+set t_Co=256
 
 " Misc settings
 let g:go_fmt_command = "goimports"
