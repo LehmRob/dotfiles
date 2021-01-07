@@ -5,4 +5,6 @@ export GOROOT=/usr/local/go
 export GOPATH=$HOME/Work/go
 export POETRYPATH=$HOME/.poetry
 
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin:$POETRYPATH/bin
+export ZEIT_DB=~/.config/zeit.db
+
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin:$HOME/usr/bin:$POETRYPATH/bin
