@@ -89,6 +89,7 @@ Plug 'junegunn/fzf.vim'
 " color schemes
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'rafi/awesome-vim-colorschemes'
+Plug 'cormacrelf/vim-colors-github'
 Plug 'reedes/vim-colors-pencil'
 Plug 'owickstrom/vim-colors-paramount'
 
@@ -97,7 +98,7 @@ if has('nvim')
 endif
 call plug#end()
 
-colorscheme paramount
+colorscheme github
 set termguicolors
 set background=light
 set t_Co=256
