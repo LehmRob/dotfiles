@@ -98,7 +98,7 @@ if has('nvim')
 endif
 call plug#end()
 
-colorscheme github
+colorscheme PaperColor
 set termguicolors
 set background=light
 set t_Co=256
