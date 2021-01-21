@@ -45,6 +45,10 @@ install_alactritty() {
         rm -rf $HOME/.config/alacritty
     fi
 
+    if [ ! -L $HOME/.config/alacritty/theme ];then
+        rm -rf $HOME/.config/alacritty/theme
+    fi
+
     stow -R -t $HOME alacritty
 }
 
