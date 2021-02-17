@@ -183,7 +183,7 @@ font:
 #draw_bold_text_with_bright_colors: true
 
 import:
-  - ~/.config/alacritty/dracula/dracula.yml
+  - .config/alacritty/theme/dracula/dracula.yml
 
 # Colors (Tomorrow Night Bright)
 
