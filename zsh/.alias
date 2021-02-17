@@ -15,3 +15,4 @@ alias ....='cd ....'
 
 alias :q='exit'
 alias od='LC_ALL=C python $HOME/work/canfestival-od-editor/objdictedit.py'
+alias cubeb='~/Tools/st/cubeide-1.5.0/headless-build.sh -data ~/work/cubeide/ -build'
