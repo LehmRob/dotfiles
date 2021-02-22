@@ -16,6 +16,7 @@ alias ...='cd ...'
 alias ....='cd ....'
 
 alias gt='git status'
+alias glo='git log --oneline'
 
 alias :q='exit'
 alias od='LC_ALL=C python $HOME/work/canfestival-od-editor/objdictedit.py'
