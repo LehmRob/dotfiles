@@ -1,5 +1,7 @@
 alias t="tmux -2 -u"
 alias tns="tmux -2 -u new-session -s"
+alias tls="tmux -2 list-session"
+alias tas="tmux -2 attach -t"
 alias nv="nvim"
 alias vi="vim"
 alias ls="ls --color=never"
@@ -12,6 +14,8 @@ alias scp6='scp -6'
 alias ..='cd ..'
 alias ...='cd ...'
 alias ....='cd ....'
+
+alias gt='git status'
 
 alias :q='exit'
 alias od='LC_ALL=C python $HOME/work/canfestival-od-editor/objdictedit.py'
