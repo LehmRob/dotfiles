@@ -74,6 +74,13 @@ install_vim() {
     stow -R -t $HOME vimrc
 }
 
+install_clang_format() {
+    if [ ! -L $HOME/.clang-format ]; then
+        rm -f $HOME/.clang-format
+    fi
+    stow -R -t $HOME clangformat
+}
+
 install_zsh
 install_nvim
 install_tmux
@@ -82,3 +89,4 @@ install_alactritty
 install_bash
 install_micro
 install_vim
+install_clang_format
