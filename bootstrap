@@ -26,7 +26,7 @@ install_nvim() {
     if [ ! -L $HOME/.config/nvim/init.vim ]; then
         rm $HOME/.config/nvim/init.vim
     fi
-    stow -R -t $HOME nvim 
+    stow -R -t $HOME nvim
 }
 
 install_tmux() {
@@ -81,6 +81,13 @@ install_clang_format() {
     stow -R -t $HOME clangformat
 }
 
+install_sublime() {
+    if [ ! -L $HOME/.config/sublime-text-3/Packages/User/Preferences.sublime-settings ]; then
+        rm -r $HOME/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
+    fi
+    stow -R -t $HOME sublimetext
+}
+
 install_zsh
 install_nvim
 install_tmux
@@ -90,3 +97,4 @@ install_bash
 install_micro
 install_vim
 install_clang_format
+install_sublime

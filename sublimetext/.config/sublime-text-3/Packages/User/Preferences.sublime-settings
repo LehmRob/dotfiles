@@ -1,0 +1,29 @@
+{
+	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"font_face": "SF Mono",
+	"font_size": 8,
+	"trim_trailing_white_space_on_save": true,
+	"highlight_modified_tabs": true,
+	"bold_folder_labels": true,
+	"caret_style": "phase",
+	"caret_extra_width": 1,
+	"overlay_scroll_bars": "enabled",
+	"file_exclude_patterns":
+	[
+		"*.lib",
+		"*.log"
+	],
+	"folder_exclude_patterns":
+	[
+		".git",
+		".bundle",
+		".sass-cache",
+		".svn",
+		".hg"
+	],
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"theme": "Adaptive.sublime-theme"
+}
