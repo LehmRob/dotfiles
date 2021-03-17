@@ -3,6 +3,9 @@
 	"caret_extra_width": 1,
 	"caret_style": "phase",
 	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"default_line_ending": "unix",
+	"hot_exit": false,
+	"remember_open_files": false,
 	"file_exclude_patterns":
 	[
 		"*.lib",
