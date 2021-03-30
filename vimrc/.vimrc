@@ -93,15 +93,16 @@ Plug 'cormacrelf/vim-colors-github'
 Plug 'reedes/vim-colors-pencil'
 Plug 'owickstrom/vim-colors-paramount'
 Plug 'dracula/vim'
+Plug 'jonathanfilip/vim-lucius'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 call plug#end()
 
-colorscheme dracula
+colorscheme lucius
 set termguicolors
-set background=dark
+set background=light
 set t_Co=256
 
 " Misc settings
