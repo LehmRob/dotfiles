@@ -88,6 +88,18 @@ install_sublime() {
     stow -R -t $HOME sublimetext
 }
 
+install_kitty() {
+    if [ ! -L $HOME/.config/kitty/kitty.conf ]; then
+        rm -rf $HOME/.config/kitty/kitty.conf
+    fi
+
+    if [ ! -L $HOME/.config/kitty/lucius.conf ]; then
+        rm  -rf $HOME/.config/kitty/kitty.conf
+    fi
+
+    stow -R -t $HOME kitty 
+}
+
 install_zsh
 install_nvim
 install_tmux
@@ -98,3 +110,4 @@ install_micro
 install_vim
 install_clang_format
 install_sublime
+install_kitty
