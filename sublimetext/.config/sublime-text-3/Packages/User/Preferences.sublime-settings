@@ -2,10 +2,8 @@
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Dracula Color Scheme/Dracula.tmTheme",
+	"color_scheme": "Packages/Github Color Theme/GitHub.tmTheme",
 	"default_line_ending": "unix",
-	"hot_exit": false,
-	"remember_open_files": false,
 	"file_exclude_patterns":
 	[
 		"*.lib",
@@ -22,11 +20,13 @@
 	"font_face": "SF Mono",
 	"font_size": 8,
 	"highlight_modified_tabs": true,
+	"hot_exit": false,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
 	"overlay_scroll_bars": "enabled",
+	"remember_open_files": false,
 	"theme": "Adaptive.sublime-theme",
 	"trim_trailing_white_space_on_save": true
 }
