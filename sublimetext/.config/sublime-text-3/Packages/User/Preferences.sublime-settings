@@ -18,7 +18,7 @@
 		".hg"
 	],
 	"font_face": "SF Mono",
-	"font_size": 8,
+	"font_size": 9,
 	"highlight_modified_tabs": true,
 	"hot_exit": false,
 	"ignored_packages":
