@@ -66,7 +66,7 @@ map <Leader>l :Lines<CR>
 map <Leader>b :Buffers<CR>
 map <Leader>t :tabedit<CR>
 map <Leader>cf :ClangFormat<CR>
-map <Leader>u :source ~/.config/nvim/init.vim<CR>
+map <Leader>W :%s/\s\+$//e<CR>
 
 " clear highlighted search
 map <Leader>u :<C-u>nohlsearch<CR><C-l>
