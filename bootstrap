@@ -100,6 +100,14 @@ install_kitty() {
     stow -R -t $HOME kitty 
 }
 
+install_i3() {
+    if [ ! -L $HOME/.config/i3/config ]; then
+        rm -f $HOME/.config/i3/config
+    fi
+    stow -R -t $HOME i3
+}
+
+
 install_zsh
 install_nvim
 install_tmux
@@ -111,3 +119,4 @@ install_vim
 install_clang_format
 install_sublime
 install_kitty
+install_i3
