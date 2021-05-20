@@ -93,6 +93,7 @@ Plug 'cormacrelf/vim-colors-github'
 Plug 'reedes/vim-colors-pencil'
 Plug 'owickstrom/vim-colors-paramount'
 Plug 'dracula/vim'
+Plug 'altercation/vim-colors-solarized'
 Plug 'jonathanfilip/vim-lucius'
 
 if has('nvim')
@@ -100,7 +101,7 @@ if has('nvim')
 endif
 call plug#end()
 
-colorscheme lucius
+colorscheme solarized
 set termguicolors
 set background=light
 set t_Co=256
