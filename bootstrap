@@ -90,11 +90,7 @@ install_sublime() {
 
 install_kitty() {
     if [ ! -L $HOME/.config/kitty/kitty.conf ]; then
-        rm -rf $HOME/.config/kitty/kitty.conf
-    fi
-
-    if [ ! -L $HOME/.config/kitty/lucius.conf ]; then
-        rm  -rf $HOME/.config/kitty/kitty.conf
+        rm -rf $HOME/.config/kitty
     fi
 
     stow -R -t $HOME kitty 
