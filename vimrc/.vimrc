@@ -101,7 +101,7 @@ if has('nvim')
 endif
 call plug#end()
 
-colorscheme solarized
+colorscheme PaperColor
 set termguicolors
 set background=light
 set t_Co=256
