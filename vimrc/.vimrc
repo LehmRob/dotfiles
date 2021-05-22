@@ -9,7 +9,7 @@ set incsearch
 set ic
 set hlsearch
 set expandtab
-set colorcolumn=100
+"set colorcolumn=100
 set sw=4
 set ts=4
 set sts=4
@@ -28,7 +28,6 @@ set backupdir=~/.vim/tmp/backup//
 set backup
 set noswapfile
 
-"set list listchars=tab:»\ \,eol:¬,extends:❯,precedes:❮,trail:·
 set list listchars=tab:\|\ ,eol:¬,extends:❯,precedes:❮,trail:·
 
 " activate mouse for normal and visual mode
@@ -101,10 +100,10 @@ if has('nvim')
 endif
 call plug#end()
 
-colorscheme solarized
 set termguicolors
+syntax enable
 set background=light
-set t_Co=256
+colorscheme PaperColor
 
 " Misc settings
 let g:go_fmt_command = "goimports"

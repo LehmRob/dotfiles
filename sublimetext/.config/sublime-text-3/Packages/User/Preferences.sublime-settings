@@ -23,10 +23,10 @@
 	"hot_exit": false,
 	"ignored_packages":
 	[
-		"Vintage"
+		"Vintage",
 	],
 	"overlay_scroll_bars": "enabled",
 	"remember_open_files": false,
 	"theme": "Adaptive.sublime-theme",
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
 }
