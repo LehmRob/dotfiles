@@ -2,7 +2,7 @@
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Github Color Theme/GitHub.tmTheme",
+	"color_scheme": "Packages/Theme - Alpenglow/Alpenglow-monokai.tmTheme",
 	"default_line_ending": "unix",
 	"file_exclude_patterns":
 	[
@@ -27,6 +27,8 @@
 	],
 	"overlay_scroll_bars": "enabled",
 	"remember_open_files": false,
-	"theme": "Adaptive.sublime-theme",
+	"theme": "Default.sublime-theme",
 	"trim_trailing_white_space_on_save": true,
+	"dark_theme": "Default.sublime-theme",
+	"light_theme": "Default Dark.sublime-theme",
 }
