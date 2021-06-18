@@ -2,7 +2,7 @@
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Theme - Alpenglow/Alpenglow-monokai.tmTheme",
+	"color_scheme": "Packages/Github Color Theme/GitHub.tmTheme",
 	"default_line_ending": "unix",
 	"file_exclude_patterns":
 	[
