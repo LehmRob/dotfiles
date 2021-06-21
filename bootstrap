@@ -103,6 +103,12 @@ install_i3() {
     stow -R -t $HOME i3
 }
 
+install_vscodium() {
+    if [ ! -L $HOME/.config/VSCodium/User/settings.json ]; then
+        rm -r $HOME/.config/VSCodium/User/settings.json
+    fi
+    stow -R -t $HOME vscodium
+}
 
 install_zsh
 install_nvim
@@ -116,3 +122,4 @@ install_clang_format
 install_sublime
 install_kitty
 install_i3
+install_vscodium
