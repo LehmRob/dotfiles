@@ -110,6 +110,13 @@ install_vscodium() {
     stow -R -t $HOME vscodium
 }
 
+install_vscode() {
+    if [ ! -L $HOME/.config/Code/User/settings.json ]; then
+        rm -r $HOME/.config/Code/User/settings.json
+    fi
+    stow -R -t $HOME vscode
+}
+
 install_zsh
 install_nvim
 install_tmux
@@ -123,3 +130,4 @@ install_sublime
 install_kitty
 install_i3
 install_vscodium
+install_vscode

@@ -1,0 +1,54 @@
+{
+    "editor.fontFamily": "'SF Mono'",
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "editor.fontSize": 11,
+
+    // java configuration
+    "java.configuration.runtimes": [
+        {
+            "name": "JavaSE-11",
+            "path": "/opt/jdk-11.0.9.1+1"
+        }
+    ],
+    "java.home": "/opt/jdk-11.0.9.1+1",
+    "workbench.colorTheme": "Default Light+",
+    "terminal.integrated.fontSize": 11,
+    "files.exclude": {
+        "**/.classpath": true,
+        "**/.project": true,
+        "**/.settings": true,
+        "**/.factorypath": true
+    },
+    "editor.minimap.enabled": false,
+    "redhat.telemetry.enabled": false,
+
+    // vim configuration
+    "vim.easymotion": true,
+    "vim.sneak": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.insertModeKeyBindings": [
+      {
+        "before": ["j", "k"],
+        "after": ["<Esc>"]
+      }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+      {
+        "before": ["<leader>", "d"],
+        "after": ["d", "d"]
+      },
+      {
+        "before": ["<C-n>"],
+        "commands": [":nohl"]
+      }
+    ],
+    "vim.leader": ",",
+    "vim.handleKeys": {
+      "<C-a>": false,
+      "<C-f>": false
+    },
+}
