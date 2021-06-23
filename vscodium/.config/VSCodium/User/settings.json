@@ -29,6 +29,7 @@
     "editor.fontFamily": "'SF Mono'",
     "editor.fontSize": 11,
     "editor.minimap.enabled": false,
+    "terminal.integrated.fontSize": 11,
     "workbench.colorTheme": "Github Light Theme",
     "C_Cpp.updateChannel": "Insiders",
     "go.toolsManagement.autoUpdate": true
