@@ -7,7 +7,7 @@
     "vim.hlsearch": true,
     "vim.insertModeKeyBindings": [
       {
-        "before": ["j", "k"],
+        "before": ["j", "j"],
         "after": ["<Esc>"]
       }
     ],
@@ -30,5 +30,6 @@
     "editor.fontSize": 11,
     "editor.minimap.enabled": false,
     "workbench.colorTheme": "Github Light Theme",
-    "C_Cpp.updateChannel": "Insiders"
+    "C_Cpp.updateChannel": "Insiders",
+    "go.toolsManagement.autoUpdate": true
 }
