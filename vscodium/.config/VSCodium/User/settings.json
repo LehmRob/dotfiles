@@ -30,8 +30,11 @@
     "editor.fontSize": 11,
     "editor.minimap.enabled": false,
     "terminal.integrated.fontSize": 11,
-    "workbench.colorTheme": "Github Light Theme",
+    "workbench.colorTheme": "Github Light Theme - Gray",
     "C_Cpp.updateChannel": "Insiders",
     "git.autofetch": true,
-    "go.toolsManagement.autoUpdate": true
+    "go.toolsManagement.autoUpdate": true,
+    "redhat.telemetry.enabled": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
 }

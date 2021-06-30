@@ -117,6 +117,13 @@ install_vscode() {
     stow -R -t $HOME vscode
 }
 
+install_gnome() {
+    if [ ! -L $HOME/.config/gtk-3.0/gtk.css ]; then
+        rm -r $HOME/.config/gtk-3.0/gtk.css
+    fi
+    stow -R -t $HOME gnome
+}
+
 install_zsh
 install_nvim
 install_tmux
@@ -131,3 +138,4 @@ install_kitty
 install_i3
 install_vscodium
 install_vscode
+install_gnome
