@@ -33,7 +33,6 @@
     "workbench.colorTheme": "Github Light Theme - Gray",
     "C_Cpp.updateChannel": "Insiders",
     "go.toolsManagement.autoUpdate": true,
-    "go.buildFlags": ["mage"],
     "redhat.telemetry.enabled": true,
     "editor.suggestSelection": "first",
     "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue"
