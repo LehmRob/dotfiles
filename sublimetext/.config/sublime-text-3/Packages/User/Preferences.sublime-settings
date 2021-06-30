@@ -2,7 +2,7 @@
 	"bold_folder_labels": true,
 	"caret_extra_width": 1,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Inspired GitHub Color Scheme/InspiredGitHub.tmTheme",
+	"color_scheme": "Packages/Colorsublime - Themes/GitHub_Light.tmTheme",
 	"default_line_ending": "unix",
 	"file_exclude_patterns":
 	[
