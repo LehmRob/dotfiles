@@ -4,7 +4,8 @@ alias tls="tmux -2 list-session"
 alias tas="tmux -2 attach -t"
 alias nv="nvim"
 alias vi="vim"
-alias ls="ls --color=never"
+#alias ls="ls --color=never"
+alias ls="exa"
 alias kssh='kitty +kitten ssh '
 alias ksshno='kitty +kitten "ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null"'
 alias sshno='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
