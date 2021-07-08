@@ -100,10 +100,11 @@ if has('nvim')
 endif
 call plug#end()
 
-colorscheme PaperColor
+"colorscheme PaperColor
+colorscheme jellybeans
 set termguicolors
 syntax enable
-set background=light
+set background=dark
 
 " Misc settings
 let g:go_fmt_command = "goimports"
