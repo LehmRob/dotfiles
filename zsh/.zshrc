@@ -110,6 +110,10 @@ if [ -e $HOME/.exports ]; then
 	source $HOME/.exports
 fi
 
+if [ -e $HOME/.zshhash ]; then
+    source $HOME/.zshhash ];
+fi
+
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
