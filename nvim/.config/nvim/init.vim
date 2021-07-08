@@ -90,6 +90,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'andreypopp/vim-colors-plain'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'endel/vim-github-colorscheme'
+Plug 'dracula/vim'
 Plug 'junegunn/seoul256.vim'
 
 if has('nvim')
@@ -97,9 +98,9 @@ if has('nvim')
 endif
 call plug#end()
 
-colorscheme PaperColor 
+colorscheme dracula
 set termguicolors
-set background=light
+set background=dark
 set t_Co=256
 
 " Misc settings
