@@ -22,10 +22,10 @@ syntax sync minlines=256
 set lazyredraw
 
 " Backup
-set undofile
-set undodir=~/.vim/tmp/undo//
-set backupdir=~/.vim/tmp/backup//
-set backup
+"set undofile
+"set undodir=~/.vim/tmp/undo//
+"set backupdir=~/.vim/tmp/backup//
+"set backup
 set noswapfile
 
 "set list listchars=tab:»\ \,eol:¬,extends:❯,precedes:❮,trail:·
