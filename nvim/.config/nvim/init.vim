@@ -90,9 +90,7 @@ Plug 'neovim/nvim-lspconfig'
 " color schemes
 Plug 'andreypopp/vim-colors-plain'
 Plug 'NLKNguyen/papercolor-theme'
-Plug 'endel/vim-github-colorscheme'
 Plug 'dracula/vim'
-Plug 'junegunn/seoul256.vim'
 
 if has('nvim')
   Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -114,7 +112,23 @@ let g:deoplete#enable_at_startup = 1
 
 " ccls
 lua << EOF
-require'lspconfig'.ccls.setup{}
+local lspconfig = require'lspconfig'
+lspconfig.ccls.setup {
+  init_options = {
+    compilationDatabaseDirectory = "build";
+    index = {
+      threads = 0;
+    };
+    clang = {
+      excludeArgs = { "-frounding-math"} ;
+    };
+  }
+}
+EOF
+
+" gopls
+lua << EOF
+require 'lspconfig'.gopls.setup{}
 EOF
 
 
