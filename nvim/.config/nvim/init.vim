@@ -111,20 +111,20 @@ let g:deoplete#enable_at_startup = 1
 " LSP settings
 
 " ccls
-lua << EOF
-local lspconfig = require'lspconfig'
-lspconfig.ccls.setup {
-  init_options = {
-    compilationDatabaseDirectory = "build";
-    index = {
-      threads = 0;
-    };
-    clang = {
-      excludeArgs = { "-frounding-math"} ;
-    };
-  }
-}
-EOF
+"lua << EOF
+"local lspconfig = require'lspconfig'
+"lspconfig.ccls.setup {
+  "init_options = {
+    "compilationDatabaseDirectory = "build";
+    "index = {
+      "threads = 0;
+    "};
+    "clang = {
+      "excludeArgs = { "-frounding-math"} ;
+    "};
+  "}
+"}
+"EOF
 
 " gopls
 lua << EOF
