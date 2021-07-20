@@ -20,6 +20,7 @@ alias ....='cd ....'
 
 alias gt='git status'
 alias glo='git log --oneline'
+alias glog='git log --oneline --graph'
 
 alias :q='exit'
 alias :qall='exit'
