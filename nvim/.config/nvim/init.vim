@@ -60,12 +60,13 @@ map <Leader>w :w<cr>
 map <Leader>a :q!<cr>
 map <Leader>q :wq<cr>
 map <Leader>m :make<cr>
+map <Leader>p :!cmake --build build<CR>
+map <Leader>B :!cmake --build build<CR>
 map <Leader>nt :NERDTreeToggle<CR>
 map <Leader>f :Files<CR>
 map <Leader>l :Lines<CR>
 map <Leader>b :Buffers<CR>
 map <Leader>t :tabedit<CR>
-map <Leader>cf :ClangFormat<CR>
 map <Leader>u :source ~/.config/nvim/init.vim<CR>
 
 " clear highlighted search
@@ -103,31 +104,11 @@ set background=dark
 set t_Co=256
 
 " auto complete
-set completeopt=menuone,noselect
-
 " Misc settings
 let g:go_fmt_command = "goimports"
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
 let g:deoplete#enable_at_startup = 1
-
-" LSP settings
-
-" ccls
-"lua << EOF
-"local lspconfig = require'lspconfig'
-"lspconfig.ccls.setup {
-  "init_options = {
-    "compilationDatabaseDirectory = "build";
-    "index = {
-      "threads = 0;
-    "};
-    "clang = {
-      "excludeArgs = { "-frounding-math"} ;
-    "};
-  "}
-"}
-"EOF
 
 " gopls
 lua << EOF
