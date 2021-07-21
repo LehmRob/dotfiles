@@ -105,6 +105,10 @@ set t_Co=256
 " auto complete
 set completeopt=menuone,noselect
 
+if has("nvim")
+  set inccommand=nosplit                        " show substitutions incrementally
+endif
+
 " Misc settings
 let g:go_fmt_command = "goimports"
 let g:clang_format#detect_style_file = 1
