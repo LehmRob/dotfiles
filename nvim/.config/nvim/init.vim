@@ -86,7 +86,8 @@ Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-Plug 'neovim/nvim-lspconfig'
+"Plug 'neovim/nvim-lspconfig'
+Plug 'dense-analysis/ale'
 
 " color schemes
 Plug 'andreypopp/vim-colors-plain'
@@ -113,10 +114,10 @@ let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
 let g:deoplete#enable_at_startup = 1
 
-" gopls
-lua << EOF
-require 'lspconfig'.gopls.setup{}
-EOF
+"" gopls
+"lua << EOF
+"require 'lspconfig'.gopls.setup{}
+"EOF
 
 
 " Status line settings are inspired by
