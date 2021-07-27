@@ -67,6 +67,7 @@ map <Leader>f :Files<CR>
 map <Leader>l :Lines<CR>
 map <Leader>b :Buffers<CR>
 map <Leader>t :tabedit<CR>
+map <Leader>g :ALEGoToDefinition<CR>
 map <Leader>u :source ~/.config/nvim/init.vim<CR>
 
 " clear highlighted search
