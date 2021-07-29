@@ -124,6 +124,14 @@ install_gnome() {
     stow -R -t $HOME gnome
 }
 
+install_fish() {
+    if [ ! -L $HOME/.config/fish/config.fish ]; then
+        rm -r $HOME/.config/fish/config.fish
+    fi
+
+    stow -R -t $HOME fish
+}
+
 install_zsh
 install_nvim
 install_tmux
@@ -139,3 +147,4 @@ install_i3
 install_vscodium
 install_vscode
 install_gnome
+install_fish
