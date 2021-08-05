@@ -10,6 +10,7 @@ PROMPT='
 %~ ${smiley}  %{$reset_color%}'
 
 setopt menucomplete
+zstyle ':completion:*' menu select
 autoload compinit
 compinit
 WORDCHARS='~!#$%^&*(){}[]<>?.+;-'
