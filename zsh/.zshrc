@@ -12,6 +12,7 @@ PROMPT='
 setopt menucomplete
 autoload compinit
 compinit
+WORDCHARS='~!#$%^&*(){}[]<>?.+;-'
 
 # source some of the files
 
