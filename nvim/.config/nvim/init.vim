@@ -100,9 +100,9 @@ if has('nvim')
 endif
 call plug#end()
 
-colorscheme dracula
+colorscheme PaperColor
 set termguicolors
-set background=dark
+set background=light
 set t_Co=256
 
 if has("nvim")
