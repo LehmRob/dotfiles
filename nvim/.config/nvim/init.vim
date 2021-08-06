@@ -87,12 +87,12 @@ Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
-"Plug 'neovim/nvim-lspconfig'
 Plug 'dense-analysis/ale'
 
 " color schemes
 Plug 'andreypopp/vim-colors-plain'
 Plug 'NLKNguyen/papercolor-theme'
+Plug 'jonathanfilip/vim-lucius'
 Plug 'dracula/vim'
 
 if has('nvim')
@@ -100,7 +100,7 @@ if has('nvim')
 endif
 call plug#end()
 
-colorscheme PaperColor
+colorscheme lucius
 set termguicolors
 set background=light
 set t_Co=256
@@ -114,12 +114,6 @@ let g:go_fmt_command = "goimports"
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
 let g:deoplete#enable_at_startup = 1
-
-"" gopls
-"lua << EOF
-"require 'lspconfig'.gopls.setup{}
-"EOF
-
 
 " Status line settings are inspired by
 " https://gabri.me/blog/diy-vim-statusline
