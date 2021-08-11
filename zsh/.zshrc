@@ -8,8 +8,6 @@ local smiley="%(?,%{$fg[green]%}☺%{$reset_color%},%{$fg[red]%}☹%{$reset_colo
 
 PROMPT='%~ ${smiley}  %{$reset_color%}'
 
-# add reverse tab for tab completion
-bindkey -M menuselect '^[[Z' reverse-menu-complete
 setopt menucomplete
 zstyle ':completion:*' menu select
 autoload compinit
