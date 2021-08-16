@@ -2,6 +2,7 @@
 BasedOnStyle: LLVM
 AlignAfterOpenBracket: DontAlign
 AlignTrailingComments: 'true'
+AlwaysBreakTemplateDeclarations: 'true'
 TabWidth: '4'
 IndentWidth: '4'
 UseTab: Never
