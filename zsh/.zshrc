@@ -24,6 +24,10 @@ if [ -e $HOME/.alias ]; then
 	source $HOME/.alias
 fi
 
+if [ -e $HOME/.machine-alias ]; then
+	source $HOME/.machine-alias
+fi
+
 if [ -e $HOME/.exports ]; then
 	source $HOME/.exports
 fi
@@ -36,3 +40,12 @@ fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+# The following lines were added by compinstall
+
+zstyle ':completion:*' completer _complete _ignored _correct
+zstyle ':completion:*' matcher-list '+m:{[:lower:][:upper:]}={[:upper:][:lower:]} r:|[._-]=** r:|=**'
+zstyle :compinstall filename '/home/rd7/.zshrc'
+
+autoload -Uz compinit
+compinit
+# End of lines added by compinstall

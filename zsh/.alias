@@ -21,8 +21,8 @@ alias ....='cd ....'
 alias gt='git status'
 alias glo='git log --oneline'
 alias glog='git log --oneline --graph'
+alias gcp="git commit -p"
+alias gca="git commit -a"
 
 alias :q='exit'
 alias :qall='exit'
-alias od='LC_ALL=C python $HOME/work/canfestival-od-editor/objdictedit.py'
-alias cubeb='~/Tools/st/cubeide-1.5.0/headless-build.sh -data ~/work/cubeide/ -build'
