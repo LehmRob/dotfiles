@@ -81,22 +81,22 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'ervandew/supertab'
 Plug 'rhysd/vim-clang-format'
-Plug 'rking/ag.vim'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " color schemes
-Plug 'andreypopp/vim-colors-plain'
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'dracula/vim'
 
 if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 call plug#end()
 
@@ -109,11 +109,16 @@ if has("nvim")
   set inccommand=nosplit                        " show substitutions incrementally
 endif
 
+" The Silver Searcher
+if executable('ag')
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
+endif
+
 " Misc settings
 let g:go_fmt_command = "goimports"
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
-let g:deoplete#enable_at_startup = 1
 
 " Status line settings are inspired by
 " https://gabri.me/blog/diy-vim-statusline
