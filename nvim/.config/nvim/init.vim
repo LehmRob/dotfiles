@@ -2,7 +2,7 @@ set ai
 set hidden
 set icon
 "set relativenumber
-set number
+set nonu 
 set showmatch
 set showcmd
 set incsearch
