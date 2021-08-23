@@ -123,11 +123,12 @@ fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-# The following lines were added by compinstall
 
-zstyle ':completion:*' completer _complete _ignored _correct
-zstyle ':completion:*' matcher-list '+m:{[:lower:][:upper:]}={[:upper:][:lower:]} r:|[._-]=** r:|=**'
-zstyle :compinstall filename '/home/rd7/.zshrc'
+## The following lines were added by compinstall
+
+#zstyle ':completion:*' completer _complete _ignored _correct
+#zstyle ':completion:*' matcher-list '+m:{[:lower:][:upper:]}={[:upper:][:lower:]} r:|[._-]=** r:|=**'
+#zstyle :compinstall filename '/home/rd7/.zshrc'
 
 
-# alias ohmyzsh="mate ~/.oh-my-zsh"
+## alias ohmyzsh="mate ~/.oh-my-zsh"
