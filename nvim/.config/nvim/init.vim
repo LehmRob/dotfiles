@@ -94,8 +94,13 @@ Plug 'jonathanfilip/vim-lucius'
 Plug 'dracula/vim'
 
 if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  " main one
+  Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+  " 9000+ Snippets
+  Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 endif
+
 call plug#end()
 
 colorscheme lucius
@@ -111,17 +116,18 @@ endif
 let g:go_fmt_command = "goimports"
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
+let g:coq_settings = { 'auto_start': v:true }
 
 " deoplete settings
-let g:deoplete#enable_at_startup = 1
-inoremap <silent><expr> <TAB>
-		\ pumvisible() ? "\<C-n>" :
-		\ <SID>check_back_space() ? "\<TAB>" :
-		\ deoplete#manual_complete()
-		function! s:check_back_space() abort "{{{
-		  let col = col('.') - 1
-		  return !col || getline('.')[col - 1]  =~ '\s'
-		endfunction"}}}
+"let g:deoplete#enable_at_startup = 1
+"inoremap <silent><expr> <TAB>
+		"\ pumvisible() ? "\<C-n>" :
+		"\ <SID>check_back_space() ? "\<TAB>" :
+		"\ deoplete#manual_complete()
+		"function! s:check_back_space() abort "{{{
+		  "let col = col('.') - 1
+		  "return !col || getline('.')[col - 1]  =~ '\s'
+		"endfunction"}}}
 
 " Status line settings are inspired by
 " https://gabri.me/blog/diy-vim-statusline
