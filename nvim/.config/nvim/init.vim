@@ -79,7 +79,6 @@ let g:python3_host_prog = '/usr/bin/python3'
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'ervandew/supertab'
 Plug 'rhysd/vim-clang-format'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
@@ -88,7 +87,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " color schemes
 Plug 'NLKNguyen/papercolor-theme'
@@ -96,7 +94,7 @@ Plug 'jonathanfilip/vim-lucius'
 Plug 'dracula/vim'
 
 if has('nvim')
-  "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 endif
 call plug#end()
 
@@ -109,16 +107,21 @@ if has("nvim")
   set inccommand=nosplit                        " show substitutions incrementally
 endif
 
-" The Silver Searcher
-if executable('ag')
-  " Use ag over grep
-  set grepprg=ag\ --nogroup\ --nocolor
-endif
-
 " Misc settings
 let g:go_fmt_command = "goimports"
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
+
+" deoplete settings
+let g:deoplete#enable_at_startup = 1
+inoremap <silent><expr> <TAB>
+		\ pumvisible() ? "\<C-n>" :
+		\ <SID>check_back_space() ? "\<TAB>" :
+		\ deoplete#manual_complete()
+		function! s:check_back_space() abort "{{{
+		  let col = col('.') - 1
+		  return !col || getline('.')[col - 1]  =~ '\s'
+		endfunction"}}}
 
 " Status line settings are inspired by
 " https://gabri.me/blog/diy-vim-statusline
