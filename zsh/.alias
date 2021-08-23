@@ -21,8 +21,9 @@ alias ....='cd ....'
 alias gt='git status'
 alias glo='git log --oneline'
 alias glog='git log --oneline --graph'
-alias gcp="git commit -p"
-alias gca="git commit -a"
+alias gc="git commit -v"
+alias gcp="gc -p"
+alias gca="gc -a"
 
 alias :q='exit'
 alias :qall='exit'
