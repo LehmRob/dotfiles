@@ -87,6 +87,7 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'mileszs/ack.vim'
 
 " color schemes
 Plug 'NLKNguyen/papercolor-theme'
@@ -117,6 +118,10 @@ let g:go_fmt_command = "goimports"
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
 let g:coq_settings = { 'auto_start': v:true }
+let g:ackprg = 'ag --vimgrep'
+
+" set some ale options
+let g:ale_c_parse_compile_commands = 1
 
 " deoplete settings
 "let g:deoplete#enable_at_startup = 1

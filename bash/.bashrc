@@ -125,3 +125,4 @@ fi
 export PATH="$PATH:$HOME/.rvm/bin"
 
 eval "$(thefuck --alias)"
+. "$HOME/.cargo/env"
