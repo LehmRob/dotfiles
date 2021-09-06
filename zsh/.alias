@@ -17,6 +17,7 @@ alias scp6='scp -6'
 alias ..='cd ..'
 alias ...='cd ...'
 alias ....='cd ....'
+alias bat='bat --theme=GitHub'
 
 alias gt='git status'
 alias glo='git log --oneline'
