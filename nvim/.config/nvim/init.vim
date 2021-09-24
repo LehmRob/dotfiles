@@ -92,7 +92,7 @@ Plug 'mileszs/ack.vim'
 " color schemes
 Plug 'NLKNguyen/papercolor-theme'
 Plug 'jonathanfilip/vim-lucius'
-Plug 'dracula/vim'
+Plug 'chriskempson/base16-vim'
 
 if has('nvim')
   "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -104,7 +104,9 @@ endif
 
 call plug#end()
 
-colorscheme lucius
+"colorscheme lucius
+colorscheme base16-cupertino
+"colorscheme base16-atelier-sulphurpool-light
 set termguicolors
 set background=light
 set t_Co=256

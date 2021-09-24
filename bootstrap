@@ -141,10 +141,7 @@ install_bash
 install_micro
 install_vim
 install_clang_format
-install_sublime
 install_kitty
 install_i3
-install_vscodium
-install_vscode
 install_gnome
 install_fish
