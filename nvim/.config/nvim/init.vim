@@ -105,10 +105,10 @@ endif
 call plug#end()
 
 "colorscheme lucius
-colorscheme base16-cupertino
+colorscheme base16-default-dark
 "colorscheme base16-atelier-sulphurpool-light
 set termguicolors
-set background=light
+set background=dark
 set t_Co=256
 
 if has("nvim")
