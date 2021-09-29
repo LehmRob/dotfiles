@@ -105,7 +105,7 @@ endif
 call plug#end()
 
 "colorscheme lucius
-colorscheme base16-default-dark
+colorscheme base16-gruvbox-dark-pale
 "colorscheme base16-atelier-sulphurpool-light
 set termguicolors
 set background=dark
