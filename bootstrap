@@ -60,6 +60,14 @@ install_bash() {
     stow -R -t $HOME bash
 }
 
+install_spacemacs() {
+    if [ ! -L $HOME/.spacemacs ]; then
+        rm -rf $HOME/.spacemacs
+    fi
+
+    stow -R -t $HOME spacemacs
+}
+
 install_micro() {
     if [ ! -L $HOME/.config/micro/settings.json ]; then
         rm -f $HOME/.config/micro/settings.json
