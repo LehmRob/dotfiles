@@ -75,6 +75,13 @@ install_micro() {
     stow -R -t $HOME micro
 }
 
+install_spacemacs() {
+    if [ ! -L $HOME/.spacemacs ]; then
+        rm -f $HOME/.spacemacs
+    fi
+    stow -R -t $HOME spacemacs
+}
+
 install_vim() {
     if [ ! -L $HOME/.vimrc ]; then
         rm -f $HOME/.vimrc
