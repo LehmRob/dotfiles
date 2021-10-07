@@ -44,8 +44,8 @@ This function should only modify configuration layer settings."
      better-defaults
      emacs-lisp
      ;; git
-     ;; helm
-     ivy
+     helm
+     ;; ivy
      go
      (go :variables
          go-tab-width 4
@@ -53,6 +53,8 @@ This function should only modify configuration layer settings."
          gofmt-command "goimports")
 
      python
+     (python :variables
+             python-backend 'anaconda)
      c-c++
      lsp
      markdown
@@ -233,7 +235,8 @@ It should only modify the values of Spacemacs settings."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press `SPC T n' to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(spacemacs-light
+   dotspacemacs-themes '(leuven
+                         spacemacs-light
                          spacemacs-dark)
 
    ;; Set the theme for the Spaceline. Supported themes are `spacemacs',
@@ -549,7 +552,6 @@ This function is called only while dumping Spacemacs configuration. You can
 `require' or `load' the libraries of your choice that will be included in the
 dump."
 
-  ; Go Specific settings
   )
 
 
@@ -559,7 +561,7 @@ This function is called at the very end of Spacemacs startup, after layer
 configuration.
 Put your configuration code here, except for variables that should be set
 before packages are loaded."
-
+  (setq-default evil-escape-key-sequence "fd")
   )
 
 
