@@ -32,7 +32,8 @@ This function should only modify configuration layer settings."
 
    ;; List of configuration layers to load.
    dotspacemacs-configuration-layers
-   '(csv
+   '(rust
+     csv
      javascript
      html
      ;; ----------------------------------------------------------------
@@ -44,8 +45,8 @@ This function should only modify configuration layer settings."
      better-defaults
      emacs-lisp
      ;; git
-     helm
-     ;; ivy
+     ;; helm
+     ivy
      go
      (go :variables
          go-tab-width 4
@@ -577,6 +578,8 @@ This function is called at the very end of Spacemacs initialization."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(custom-safe-themes
+   '("3a9f65e0004068ecf4cf31f4e68ba49af56993c20258f3a49e06638c825fbfb6" default))
  '(delete-selection-mode nil)
  '(evil-want-Y-yank-to-eol nil)
  '(hl-todo-keyword-faces
