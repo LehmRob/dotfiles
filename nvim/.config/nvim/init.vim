@@ -53,6 +53,12 @@ filetype indent on
 " Some key mappings
 inoremap jj <ESC>
 
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
 let mapleader = ","
 map <Leader>s :split<cr>
 map <Leader>v :vsplit<cr>
@@ -88,6 +94,7 @@ Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mileszs/ack.vim'
+Plug 'junegunn/vim-easy-align'
 
 " color schemes
 Plug 'jonathanfilip/vim-lucius'
