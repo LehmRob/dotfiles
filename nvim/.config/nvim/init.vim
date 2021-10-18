@@ -78,7 +78,7 @@ let g:python3_host_prog = '/usr/bin/python3'
 
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdcommenter'
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
 Plug 'rhysd/vim-clang-format'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
@@ -88,11 +88,16 @@ Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mileszs/ack.vim'
+if has('nvim')
+    Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+else
+    Plug 'Shougo/defx.nvim'
+    Plug 'roxma/nvim-yarp'
+    Plug 'roxma/vim-hug-neovim-rpc'
+endif
 
 " color schemes
-Plug 'NLKNguyen/papercolor-theme'
 Plug 'jonathanfilip/vim-lucius'
-Plug 'chriskempson/base16-vim'
 
 if has('nvim')
   "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
