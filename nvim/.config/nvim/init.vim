@@ -29,7 +29,7 @@ set lazyredraw
 set noswapfile
 
 "set list listchars=tab:»\ \,eol:¬,extends:❯,precedes:❮,trail:·
-set list listchars=tab:\|\ ,eol:¬,extends:❯,precedes:❮,trail:·
+set list listchars=tab:\|\ ,extends:❯,precedes:❮,trail:·
 
 " activate mouse for normal and visual mode
 set mouse=nv
