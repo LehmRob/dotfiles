@@ -5,10 +5,9 @@ export GOROOT=/usr/local/go
 export GOPATH=$HOME/Work/go
 export GOPRIVATE="172.16.40.5"
 
-export POETRYPATH=$HOME/.poetry
-
-export ZEIT_DB=~/.config/zeit.db
 export KITTY_DISABLE_WAYLAND=1
+
+BAT_THEME="Monokai Extended Light"
 
 export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin:$HOME/usr/bin:$POETRYPATH/bin
 export PATH=$PATH:$HOME/.local/bin
