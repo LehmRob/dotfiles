@@ -1,15 +1,15 @@
 set ai
 set hidden
 set icon
-"set relativenumber
-set number
+set relativenumber
+"set nonu 
 set showmatch
 set showcmd
 set incsearch
 set ic
 set hlsearch
 set expandtab
-"set colorcolumn=100
+set colorcolumn=100
 set sw=4
 set ts=4
 set sts=4
@@ -22,13 +22,14 @@ syntax sync minlines=256
 set lazyredraw
 
 " Backup
-set undofile
-set undodir=~/.vim/tmp/undo//
-set backupdir=~/.vim/tmp/backup//
-set backup
+"set undofile
+"set undodir=~/.vim/tmp/undo//
+"set backupdir=~/.vim/tmp/backup//
+"set backup
 set noswapfile
 
-set list listchars=tab:\|\ ,eol:¬,extends:❯,precedes:❮,trail:·
+"set list listchars=tab:»\ \,eol:¬,extends:❯,precedes:❮,trail:·
+set list listchars=tab:\|\ ,extends:❯,precedes:❮,trail:·
 
 " activate mouse for normal and visual mode
 set mouse=nv
@@ -52,6 +53,12 @@ filetype indent on
 " Some key mappings
 inoremap jj <ESC>
 
+" Start interactive EasyAlign in visual mode (e.g. vipga)
+xmap ga <Plug>(EasyAlign)
+
+" Start interactive EasyAlign for a motion/text object (e.g. gaip)
+nmap ga <Plug>(EasyAlign)
+
 let mapleader = ","
 map <Leader>s :split<cr>
 map <Leader>v :vsplit<cr>
@@ -59,13 +66,15 @@ map <Leader>w :w<cr>
 map <Leader>a :q!<cr>
 map <Leader>q :wq<cr>
 map <Leader>m :make<cr>
+map <Leader>p :!cmake --build build<CR>
+map <Leader>B :!cmake --build build<CR>
 map <Leader>nt :NERDTreeToggle<CR>
 map <Leader>f :Files<CR>
 map <Leader>l :Lines<CR>
 map <Leader>b :Buffers<CR>
 map <Leader>t :tabedit<CR>
-map <Leader>cf :ClangFormat<CR>
-map <Leader>W :%s/\s\+$//e<CR>
+map <Leader>g :ALEGoToDefinition<CR>
+map <Leader>u :source ~/.config/nvim/init.vim<CR>
 
 " clear highlighted search
 map <Leader>u :<C-u>nohlsearch<CR><C-l>
@@ -73,51 +82,67 @@ imap <a-,> <ESC>
 
 let g:python3_host_prog = '/usr/bin/python3'
 
-call plug#begin('~/.vim/plugged')
+if has('nvim')
+    call plug#begin('~/.local/share/nvim/plugged')
+else
+    call plug#begin('~/.vim/plugged')
+endif
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
-Plug 'ervandew/supertab'
 Plug 'rhysd/vim-clang-format'
-Plug 'rking/ag.vim'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
+Plug 'dense-analysis/ale'
+Plug 'editorconfig/editorconfig-vim'
+Plug 'mileszs/ack.vim'
+Plug 'junegunn/vim-easy-align'
+Plug 'Shougo/ddc.vim'
+Plug 'vim-denops/denops.vim'
 
 " color schemes
-Plug 'NLKNguyen/papercolor-theme'
-Plug 'rafi/awesome-vim-colorschemes'
-Plug 'cormacrelf/vim-colors-github'
-Plug 'reedes/vim-colors-pencil'
-Plug 'owickstrom/vim-colors-paramount'
-Plug 'dracula/vim'
-Plug 'altercation/vim-colors-solarized'
 Plug 'jonathanfilip/vim-lucius'
 
 if has('nvim')
-  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+  " main one
+  Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
+  " 9000+ Snippets
+  Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
 endif
+
 call plug#end()
 
-" vim hardcodes background color erase even if the terminfo file does
-" not contain bce (not to mention that libvte based terminals
-" incorrectly contain bce in their terminfo files). This causes
-" incorrect background rendering when using a color theme with a
-" background color.
-let &t_ut=''
-
-"colorscheme PaperColor
-colorscheme dracula
+colorscheme lucius
 set termguicolors
-syntax enable
-set background=dark
+set background=light
+
+if has("nvim")
+  set inccommand=nosplit                        " show substitutions incrementally
+endif
 
 " Misc settings
 let g:go_fmt_command = "goimports"
 let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
-let g:deoplete#enable_at_startup = 1
+let g:coq_settings = { 'auto_start': v:true }
+let g:ackprg = 'ag --vimgrep'
+
+" set some ale options
+let g:ale_c_parse_compile_commands = 1
+
+" deoplete settings
+"let g:deoplete#enable_at_startup = 1
+"inoremap <silent><expr> <TAB>
+		"\ pumvisible() ? "\<C-n>" :
+		"\ <SID>check_back_space() ? "\<TAB>" :
+		"\ deoplete#manual_complete()
+		"function! s:check_back_space() abort "{{{
+		  "let col = col('.') - 1
+		  "return !col || getline('.')[col - 1]  =~ '\s'
+		"endfunction"}}}
 
 " Status line settings are inspired by
 " https://gabri.me/blog/diy-vim-statusline

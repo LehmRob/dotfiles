@@ -16,11 +16,6 @@ set sts=4
 set encoding=utf-8
 set clipboard=unnamedplus
 
-" Speed improvements
-set synmaxcol=128
-syntax sync minlines=256
-set lazyredraw
-
 " Backup
 "set undofile
 "set undodir=~/.vim/tmp/undo//
