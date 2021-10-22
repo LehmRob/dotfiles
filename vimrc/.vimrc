@@ -101,17 +101,10 @@ Plug 'mileszs/ack.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
+Plug 'ycm-core/YouCompleteMe'
 
 " color schemes
 Plug 'jonathanfilip/vim-lucius'
-
-if has('nvim')
-  "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-  " main one
-  Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
-  " 9000+ Snippets
-  Plug 'ms-jpq/coq.artifacts', {'branch': 'artifacts'}
-endif
 
 call plug#end()
 
