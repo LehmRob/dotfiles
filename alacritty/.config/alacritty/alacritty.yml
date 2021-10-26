@@ -184,7 +184,8 @@ font:
 
 import:
   #- .config/alacritty/theme/dracula/dracula.yml
-  - .config/alacritty/theme/LuciusLight.yml
+  #- .config/alacritty/theme/LuciusLight.yml
+  - .config/alacritty/theme/base16-default-dark-256.yml
 
 # Visual Bell
 #
