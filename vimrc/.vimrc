@@ -47,8 +47,14 @@ au FileType python setlocal noexpandtab
 au FileType python set sw=4
 au FileType python set ts=4
 au FileType python set sts=4
+au FileType html set sw=2
+au FileType html set ts=2
+au FileType html set sts=2
+au FileType javascript set sw=2
+au FileType javascript set ts=2
+au FileType javascript set sts=2
 
-filetype indent on
+filetype plugin on
 
 " Some key mappings
 inoremap jj <ESC>
@@ -130,6 +136,9 @@ let g:ackprg = 'ag --vimgrep'
 
 " set some ale options
 let g:ale_c_parse_compile_commands = 1
+
+" activate editorconfig
+let g:EditorConfig_core_mode = 'external_command'
 
 " configure status line style
 let g:lightline = {
