@@ -76,7 +76,7 @@ map <Leader>p :!cmake --build build<CR>
 map <Leader>B :!cmake --build build<CR>
 map <Leader>nt :NERDTreeToggle<CR>
 map <Leader>f :Files<CR>
-map <Leader>u :MundoToggle
+map <Leader>M :MundoToggle
 map <Leader>l :Lines<CR>
 map <Leader>b :Buffers<CR>
 map <Leader>t :tabedit<CR>
