@@ -18,7 +18,7 @@ alias ..='cd ..'
 alias ...='cd ...'
 alias ....='cd ....'
 alias bat='bat --theme="Monokai Extended Light"'
-alias gotop='gotop -c default-dark'
+#alias gotop='gotop -c default-dark'
 alias enw='emacs -nw'
 
 alias gt='git status'
