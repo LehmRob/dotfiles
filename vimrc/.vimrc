@@ -21,6 +21,14 @@ set synmaxcol=128
 syntax sync minlines=256
 set lazyredraw
 
+" Settings are taken from https://github.com/mitchellh/dotfiles/blob/main/nvim/init.vim
+set wildmode=list:longest     " Wildcard matches show a list, matching the longest first
+set wildignore+=.git,.hg,.svn " Ignore version control repos
+set wildignore+=*.6           " Ignore Go compiled files
+set wildignore+=*.pyc         " Ignore Python compiled files
+set wildignore+=*.rbc         " Ignore Rubinius compiled files
+set wildignore+=*.swp         " Ignore vim backups
+
 " Backup
 "set undofile
 "set undodir=~/.vim/tmp/undo//
