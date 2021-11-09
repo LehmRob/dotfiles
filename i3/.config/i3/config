@@ -178,13 +178,13 @@ bindsym $mod+r mode "resize"
 
 bar {
     output HDMI-1
-    status_command i3status
+    status_command i3status -c ~/.config/i3/i3status-primary.conf
     tray_output HDMI-1
 }
 
 bar {
     output HDMI-2
-    status_command i3status
+    status_command i3status -c ~/.config/i3/i3status-secondary.conf
     tray_output none
 }
 
