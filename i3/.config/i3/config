@@ -142,13 +142,14 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 for_window [class="Blueman-manager"] floating enable
 for_window [title="Volume Control"] floating enable
 
-exec --no-startup-id "setxkbmap -layout us -variant altgr-intl -option ctrl:nocaps -option nodeadkeys"
+exec --no-startup-id "/usr/bin/setxkbmap -layout us -variant altgr-intl -option ctrl:nocaps -option nodeadkeys"
 exec --no-startup-id /usr/bin/nextcloud
 exec --no-startup-id /usr/bin/blueman-applet
 exec --no-startup-id "/bin/sh ~/.screenlayout/output.sh"
 exec --no-startup-id /usr/bin/xscreensaver
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id /usr/libexec/polkit-mate/polkit-mate-authentication-agent-1
+exec --no-startup-id "/usr/bin/nitrogen --restore"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {

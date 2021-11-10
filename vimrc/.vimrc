@@ -30,10 +30,6 @@ set wildignore+=*.rbc         " Ignore Rubinius compiled files
 set wildignore+=*.swp         " Ignore vim backups
 
 " Backup
-"set undofile
-"set undodir=~/.vim/tmp/undo//
-"set backupdir=~/.vim/tmp/backup//
-"set backup
 set noswapfile
 
 "set list listchars=tab:»\ \,eol:¬,extends:❯,precedes:❮,trail:·
@@ -118,10 +114,10 @@ Plug 'ervandew/supertab'
 Plug 'itchyny/lightline.vim'
 Plug 'ycm-core/YouCompleteMe'
 Plug 'simnalamburt/vim-mundo'
-Plug 'morhetz/gruvbox'
 
 " color schemes
 Plug 'jonathanfilip/vim-lucius'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
