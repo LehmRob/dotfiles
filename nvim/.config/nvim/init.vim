@@ -17,7 +17,8 @@ set encoding=utf-8
 set clipboard=unnamedplus
 
 " Settings are taken from https://github.com/mitchellh/dotfiles/blob/main/nvim/init.vim
-set wildmode=list:longest     " Wildcard matches show a list, matching the longest first
+"set wildmode=list:longest     " Wildcard matches show a list, matching the longest first
+set wildmode=full     " Wildcard matches show a list, matching the longest first
 set wildignore+=.git,.hg,.svn " Ignore version control repos
 set wildignore+=*.6           " Ignore Go compiled files
 set wildignore+=*.pyc         " Ignore Python compiled files
