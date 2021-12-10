@@ -107,6 +107,7 @@ Plug 'itchyny/lightline.vim'
 Plug 'jonathanfilip/vim-lucius'
 Plug 'morhetz/gruvbox'
 Plug 'arcticicestudio/nord-vim'
+Plug 'arzg/vim-colors-xcode'
 
 if has('nvim')
   "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -122,7 +123,7 @@ set termguicolors
 set background=dark
 set t_Co=256
 
-try | colorscheme nord | catch | endtry      " use this awesome theme if possible
+try | colorscheme xcodedarkhc | catch | endtry      " use this awesome theme if possible
 highlight Pmenu ctermbg=black guibg=black     | " fix popup color so it's easier to read
 
 
