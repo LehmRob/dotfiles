@@ -14,7 +14,7 @@ set sw=4
 set ts=4
 set sts=4
 set encoding=utf-8
-set clipboard=unnamedplus
+"set clipboard=unnamed
 
 " Settings are taken from https://github.com/mitchellh/dotfiles/blob/main/nvim/init.vim
 "set wildmode=list:longest     " Wildcard matches show a list, matching the longest first
@@ -106,6 +106,7 @@ Plug 'itchyny/lightline.vim'
 " color schemes
 Plug 'jonathanfilip/vim-lucius'
 Plug 'morhetz/gruvbox'
+Plug 'arcticicestudio/nord-vim'
 
 if has('nvim')
   "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
@@ -121,7 +122,7 @@ set termguicolors
 set background=dark
 set t_Co=256
 
-try | colorscheme gruvbox | catch | endtry      " use this awesome theme if possible
+try | colorscheme nord | catch | endtry      " use this awesome theme if possible
 highlight Pmenu ctermbg=black guibg=black     | " fix popup color so it's easier to read
 
 
@@ -135,9 +136,12 @@ let g:clang_format#detect_style_file = 1
 let g:clang_format#auto_format = 1
 let g:coq_settings = { 'auto_start': v:true }
 let g:ackprg = 'ag --vimgrep'
+let g:go_auto_type_info = 1
 
 " set some ale options
 let g:ale_c_parse_compile_commands = 1
+let g:ale_sign_error = '⤫'
+let g:ale_sign_warning = '⚠'
 
 " configure status line style
 let g:lightline = {

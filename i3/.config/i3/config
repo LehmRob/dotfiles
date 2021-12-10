@@ -149,7 +149,7 @@ exec --no-startup-id "/bin/sh ~/.screenlayout/output.sh"
 exec --no-startup-id /usr/bin/xscreensaver
 exec --no-startup-id /usr/bin/nm-applet
 exec --no-startup-id /usr/libexec/polkit-mate/polkit-mate-authentication-agent-1
-exec --no-startup-id "/usr/bin/nitrogen --restore"
+#exec --no-startup-id "/usr/bin/nitrogen --restore"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
