@@ -78,6 +78,7 @@ map <Leader>nt :NERDTreeToggle<CR>
 map <Leader>f :Files<CR>
 map <Leader>l :Lines<CR>
 map <Leader>b :Buffers<CR>
+map <Leader>r :Rg<Space>
 map <Leader>t :tabedit<CR>
 map <Leader>g :ALEGoToDefinition<CR>
 map <Leader>u :source ~/.config/nvim/init.vim<CR>
