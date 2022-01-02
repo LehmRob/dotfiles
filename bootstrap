@@ -89,13 +89,6 @@ install_clang_format() {
     stow -R -t $HOME clangformat
 }
 
-install_sublime() {
-    if [ ! -L $HOME/.config/sublime-text-3/Packages/User/Preferences.sublime-settings ]; then
-        rm -r $HOME/.config/sublime-text-3/Packages/User/Preferences.sublime-settings
-    fi
-    stow -R -t $HOME sublimetext
-}
-
 install_kitty() {
     if [ ! -L $HOME/.config/kitty/kitty.conf ]; then
         rm -rf $HOME/.config/kitty
@@ -111,20 +104,6 @@ install_i3() {
     stow -R -t $HOME i3
 }
 
-install_vscodium() {
-    if [ ! -L $HOME/.config/VSCodium/User/settings.json ]; then
-        rm -r $HOME/.config/VSCodium/User/settings.json
-    fi
-    stow -R -t $HOME vscodium
-}
-
-install_vscode() {
-    if [ ! -L $HOME/.config/Code/User/settings.json ]; then
-        rm -r $HOME/.config/Code/User/settings.json
-    fi
-    stow -R -t $HOME vscode
-}
-
 install_gnome() {
     if [ ! -L $HOME/.config/gtk-3.0/gtk.css ]; then
         rm -r $HOME/.config/gtk-3.0/gtk.css
@@ -132,13 +111,7 @@ install_gnome() {
     stow -R -t $HOME gnome
 }
 
-install_fish() {
-    if [ ! -L $HOME/.config/fish/config.fish ]; then
-        rm -r $HOME/.config/fish/config.fish
-    fi
-
-    stow -R -t $HOME fish
-}
+git submodule update --init
 
 install_zsh
 install_nvim
@@ -152,5 +125,3 @@ install_clang_format
 install_kitty
 install_i3
 install_gnome
-install_fish
-install_spacemacs
