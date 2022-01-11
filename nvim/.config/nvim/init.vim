@@ -9,7 +9,7 @@ set incsearch
 set ic
 set hlsearch
 set expandtab
-set colorcolumn=100
+"set colorcolumn=100
 set sw=4
 set ts=4
 set sts=4
