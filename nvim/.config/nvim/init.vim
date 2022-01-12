@@ -90,6 +90,7 @@ imap <a-,> <ESC>
 let g:python3_host_prog = '/usr/bin/python3'
 
 call plug#begin('~/.local/share/nvim/plugged')
+
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'rhysd/vim-clang-format'
@@ -106,12 +107,9 @@ Plug 'itchyny/lightline.vim'
 
 " color schemes
 Plug 'jonathanfilip/vim-lucius'
-Plug 'morhetz/gruvbox'
-Plug 'arzg/vim-colors-xcode'
 Plug 'chriskempson/base16-vim'
 
 if has('nvim')
-  "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
   " main one
   Plug 'ms-jpq/coq_nvim', {'branch': 'coq'}
   " 9000+ Snippets
@@ -126,7 +124,6 @@ set t_Co=256
 
 try | colorscheme base16-solarized-dark | catch | endtry      " use this awesome theme if possible
 highlight Pmenu ctermbg=black guibg=black     | " fix popup color so it's easier to read
-
 
 if has("nvim")
   set inccommand=nosplit                        " show substitutions incrementally
