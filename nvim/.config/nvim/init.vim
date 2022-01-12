@@ -75,13 +75,18 @@ map <Leader>m :make<cr>
 map <Leader>p :!cmake --build build<CR>
 map <Leader>B :!cmake --build build<CR>
 map <Leader>nt :NERDTreeToggle<CR>
-map <Leader>f :Files<CR>
-map <Leader>l :Lines<CR>
-map <Leader>b :Buffers<CR>
-map <Leader>r :Rg<Space>
+"map <Leader>f :Files<CR>
+"map <Leader>l :Lines<CR>
+"map <Leader>b :Buffers<CR>
+"map <Leader>r :Rg<Space>
 map <Leader>t :tabedit<CR>
 map <Leader>g :ALEGoToDefinition<CR>
 map <Leader>u :source ~/.config/nvim/init.vim<CR>
+
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
 " clear highlighted search
 map <Leader>u :<C-u>nohlsearch<CR><C-l>
@@ -97,13 +102,17 @@ Plug 'rhysd/vim-clang-format'
 Plug 'fatih/vim-go'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-fugitive'
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
+"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+"Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mileszs/ack.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'itchyny/lightline.vim'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
 " color schemes
 Plug 'jonathanfilip/vim-lucius'
