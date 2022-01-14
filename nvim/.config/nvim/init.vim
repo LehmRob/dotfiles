@@ -99,7 +99,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'rhysd/vim-clang-format'
-Plug 'fatih/vim-go'
+"Plug 'fatih/vim-go'
+" Use this plugin for just formatting
+Plug 'mattn/vim-goimports'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-fugitive'
 "Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
