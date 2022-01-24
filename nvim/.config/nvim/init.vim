@@ -115,6 +115,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'ryanoasis/vim-devicons'
 
 " color schemes
 Plug 'jonathanfilip/vim-lucius'
