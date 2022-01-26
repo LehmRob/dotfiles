@@ -134,7 +134,7 @@ set termguicolors
 set background=dark
 set t_Co=256
 
-try | colorscheme base16-solarized-dark | catch | endtry      " use this awesome theme if possible
+try | colorscheme base16-materia | catch | endtry      " use this awesome theme if possible
 highlight Pmenu ctermbg=black guibg=black     | " fix popup color so it's easier to read
 
 if has("nvim")
