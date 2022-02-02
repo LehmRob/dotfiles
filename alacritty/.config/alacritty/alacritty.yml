@@ -255,6 +255,10 @@ bell:
 #   - (Windows) powershell
 shell:
   program: /bin/zsh
+  args:
+    - -l
+    - -c
+    - "tmux -2 -u"
 #  args:
 #    - --login
 
@@ -468,7 +472,7 @@ key_bindings:
   #- { key: Add,      mods: Control,       action: IncreaseFontSize }
   #- { key: Subtract, mods: Control,       action: DecreaseFontSize }
   - { key: Minus,    mods: Control,       action: DecreaseFontSize }
-  - { key: N,        mods: Control,       action: SpawnNewInstance }
+  - { key: N,        mods: Control|Shift,       action: SpawnNewInstance }
   - { key: F,      mods: Control|Shift,   action: ToggleFullscreen }
 
   # (Windows only)
