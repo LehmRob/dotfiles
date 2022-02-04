@@ -34,6 +34,16 @@ set noswapfile
 " activate mouse for normal and visual mode
 set mouse=nv
 
+filetype indent on
+set nocompatible
+filetype plugin on       " may already be in your .vimrc
+
+augroup pencil
+  autocmd!
+  autocmd FileType markdown,mkd call pencil#init()
+  autocmd FileType text         call pencil#init()
+augroup END
+
 au FileType make setlocal noexpandtab
 au FileType cpp set expandtab
 au FileType cpp set sw=4
@@ -54,7 +64,6 @@ au FileType javascript set sw=2
 au FileType javascript set ts=2
 au FileType javascript set sts=2
 
-filetype indent on
 
 " Some key mappings
 inoremap jj <ESC>
@@ -116,6 +125,7 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'ryanoasis/vim-devicons'
+Plug 'reedes/vim-pencil'
 
 " color schemes
 Plug 'jonathanfilip/vim-lucius'

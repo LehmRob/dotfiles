@@ -255,10 +255,10 @@ bell:
 #   - (Windows) powershell
 shell:
   program: /bin/zsh
-  args:
-    - -l
-    - -c
-    - "tmux -2 -u"
+  #args:
+    #- -l
+    #- -c
+    #- "tmux -2 -u"
 #  args:
 #    - --login
 
