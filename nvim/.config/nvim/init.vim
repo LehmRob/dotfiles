@@ -2,19 +2,16 @@ set ai
 set hidden
 set icon
 set relativenumber
-"set nonu 
 set showmatch
 set showcmd
 set incsearch
 set ic
 set hlsearch
 set expandtab
-"set colorcolumn=100
 set sw=4
 set ts=4
 set sts=4
 set encoding=utf-8
-"set clipboard=unnamed
 
 " Settings are taken from https://github.com/mitchellh/dotfiles/blob/main/nvim/init.vim
 "set wildmode=list:longest     " Wildcard matches show a list, matching the longest first
@@ -34,45 +31,38 @@ set noswapfile
 " activate mouse for normal and visual mode
 set mouse=nv
 
-filetype indent on
-set nocompatible
-filetype plugin on       " may already be in your .vimrc
-
-augroup pencil
-  autocmd!
-  autocmd FileType markdown,mkd call pencil#init()
-  autocmd FileType text         call pencil#init()
-augroup END
+filetype on
 
 au FileType make setlocal noexpandtab
-au FileType cpp set expandtab
-au FileType cpp set sw=4
-au FileType cpp set ts=4
-au FileType cpp set sts=4
-au FileType c set sw=4
-au FileType c set ts=4
-au FileType c set sts=4
-au FileType c ClangFormatAutoDisable
-au FileType python setlocal noexpandtab
-au FileType python set sw=4
-au FileType python set ts=4
-au FileType python set sts=4
-au FileType html set sw=2
-au FileType html set ts=2
-au FileType html set sts=2
-au FileType javascript set sw=2
-au FileType javascript set ts=2
-au FileType javascript set sts=2
-
 
 " Some key mappings
 inoremap jj <ESC>
 
 " Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
-
 " Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
+
+" Visual mode pressing * or # searches for the current selection
+" Super useful! From an idea by Michael Naumann
+vnoremap <silent> * :call VisualSelection('f')<CR>
+vnoremap <silent> # :call VisualSelection('b')<CR>
+
+" Some settings taken from andrewrk
+" Moving between windows
+map <C-j> <C-W>j
+map <C-k> <C-W>k
+map <C-h> <C-W>h
+map <C-l> <C-W>l
+
+" I accidentally hit F1 all the time
+imap <F1> <Esc>
+" nice try, Ex mode
+map Q <Nop>
+" who uses semicolon anyway?
+map ; :
+" Toggle paste mode on and off
+map <leader>v :setlocal paste!<cr>
 
 let mapleader = ","
 map <Leader>s :split<cr>
@@ -84,10 +74,6 @@ map <Leader>m :make<cr>
 map <Leader>p :!cmake --build build<CR>
 map <Leader>B :!cmake --build build<CR>
 map <Leader>nt :NERDTreeToggle<CR>
-"map <Leader>f :Files<CR>
-"map <Leader>l :Lines<CR>
-"map <Leader>b :Buffers<CR>
-"map <Leader>r :Rg<Space>
 map <Leader>t :tabedit<CR>
 map <Leader>g :ALEGoToDefinition<CR>
 map <Leader>u :source ~/.config/nvim/init.vim<CR>
@@ -108,13 +94,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdcommenter'
 Plug 'scrooloose/nerdtree'
 Plug 'rhysd/vim-clang-format'
-"Plug 'fatih/vim-go'
-" Use this plugin for just formatting
 Plug 'mattn/vim-goimports'
 Plug 'rust-lang/rust.vim'
 Plug 'tpope/vim-fugitive'
-"Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-"Plug 'junegunn/fzf.vim'
 Plug 'dense-analysis/ale'
 Plug 'editorconfig/editorconfig-vim'
 Plug 'mileszs/ack.vim'
