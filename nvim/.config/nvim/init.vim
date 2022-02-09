@@ -103,6 +103,7 @@ Plug 'mileszs/ack.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-lua/plenary.nvim'
+Plug 'gabrielelana/vim-markdown'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
@@ -145,6 +146,9 @@ let g:go_auto_type_info = 1
 let g:ale_c_parse_compile_commands = 1
 let g:ale_sign_error = '⤫'
 let g:ale_sign_warning = '⚠'
+
+" disable spell checkinf for markdown
+let g:markdown_enable_spell_checking = 0
 
 " configure status line style
 let g:lightline = {
