@@ -96,10 +96,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'rhysd/vim-clang-format'
 Plug 'mattn/vim-goimports'
 Plug 'rust-lang/rust.vim'
-Plug 'tpope/vim-fugitive'
 Plug 'dense-analysis/ale'
-Plug 'editorconfig/editorconfig-vim'
-Plug 'mileszs/ack.vim'
 Plug 'junegunn/vim-easy-align'
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-lua/plenary.nvim'
@@ -109,6 +106,7 @@ Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'ryanoasis/vim-devicons'
 Plug 'reedes/vim-pencil'
+Plug 'tribela/vim-transparent'
 
 " color schemes
 Plug 'jonathanfilip/vim-lucius'
