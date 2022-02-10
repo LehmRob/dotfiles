@@ -17,9 +17,11 @@ window:
   #
   # Specified in number of columns/lines, not pixels.
   # If both are `0`, this setting is ignored.
-  #dimensions:
-  #  columns: 0
-  #  lines: 0
+  dimensions:
+    columns: 120
+    lines: 65 
+
+  opacity: 0.9
 
   # Window position (changes require restart)
   #
@@ -60,10 +62,11 @@ window:
   #
   # Values for `startup_mode` (macOS only):
   #   - SimpleFullscreen
-  startup_mode: Windowed
+  startup_mode: Windowed 
 
   # Window title
   title: Alacritty
+  dynamic_title: true
 
   # Window class (Linux/BSD only):
   class:
@@ -108,7 +111,7 @@ font:
     #   - (macOS) Menlo
     #   - (Linux/BSD) monospace
     #   - (Windows) Consolas
-    family: Jetbrains Mono
+    family: Jetbrains Mono Nerdfont Mono
 
     # The `style` can be specified to pick a specific face.
     style: Regular
@@ -154,7 +157,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    #y: 1
+    y: 1
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the right,
@@ -219,14 +222,11 @@ bell:
 # The value `0.0` is completely transparent and `1.0` is opaque.
 #background_opacity: 1.0
 
-#selection:
+selection:
   #semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
 
   # When set to `true`, selected text will be copied to the primary clipboard.
-  #save_to_clipboard: false
-
-# Allow terminal applications to change Alacritty's window title.
-dynamic_title: true
+  save_to_clipboard: true
 
 #cursor:
   # Cursor style
