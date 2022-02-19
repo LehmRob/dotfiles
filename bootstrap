@@ -111,6 +111,14 @@ install_gnome() {
     stow -R -t $HOME gnome
 }
 
+install_fish() {
+    if [ ! -L $HOME/.config/fish/config.fish ]; then
+        rm -f $HOME/.config/fish/config.fish
+    fi
+
+    stow -R -t $HOME fish
+}
+
 git submodule update --init
 
 install_zsh
@@ -125,3 +133,4 @@ install_clang_format
 install_kitty
 install_i3
 install_gnome
+install_fish
