@@ -140,6 +140,9 @@ let g:coq_settings = { 'auto_start': v:true }
 let g:ackprg = 'ag --vimgrep'
 let g:go_auto_type_info = 1
 
+" Rust setting
+let g:rustfmt_autosave = 1 
+
 " set some ale options
 let g:ale_c_parse_compile_commands = 1
 let g:ale_sign_error = '⤫'

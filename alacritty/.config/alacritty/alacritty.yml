@@ -254,7 +254,7 @@ selection:
 #   - (Linux/BSD) user login shell
 #   - (Windows) powershell
 shell:
-  program: /bin/zsh
+  program: /bin/bash
   #args:
     #- -l
     #- -c
