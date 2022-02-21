@@ -20,7 +20,6 @@ alias ..='cd ..'
 alias ...='cd ...'
 alias ....='cd ....'
 alias bat='bat --theme="base16"'
-#alias gotop='gotop -c default-dark'
 alias enw='emacs -nw'
 
 alias gt='git status'
