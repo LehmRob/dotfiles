@@ -23,6 +23,7 @@ alias bat='bat --theme="base16"'
 alias enw='emacs -nw'
 
 alias gt='git status'
+alias gd='git diff'
 alias glo='git log --oneline'
 alias glog='git log --oneline --graph'
 alias gc="git commit -v"
