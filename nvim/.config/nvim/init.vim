@@ -75,8 +75,6 @@ map <Leader>p :!cmake --build build<CR>
 map <Leader>B :!cmake --build build<CR>
 map <Leader>nt :NERDTreeToggle<CR>
 map <Leader>t :tabedit<CR>
-map <Leader>g :ALEGoToDefinition<CR>
-map <Leader>u :source ~/.config/nvim/init.vim<CR>
 
 nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
@@ -96,7 +94,7 @@ Plug 'scrooloose/nerdtree'
 Plug 'rhysd/vim-clang-format'
 Plug 'mattn/vim-goimports'
 Plug 'rust-lang/rust.vim'
-Plug 'dense-analysis/ale'
+" Plug 'dense-analysis/ale'
 Plug 'junegunn/vim-easy-align'
 Plug 'itchyny/lightline.vim'
 Plug 'nvim-lua/plenary.nvim'
@@ -105,8 +103,8 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'ryanoasis/vim-devicons'
-Plug 'reedes/vim-pencil'
 Plug 'tribela/vim-transparent'
+Plug 'editorconfig/editorconfig-vim'
 
 " color schemes
 Plug 'jonathanfilip/vim-lucius'
