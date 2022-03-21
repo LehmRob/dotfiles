@@ -1,10 +1,6 @@
 {
     "autosu": true,
-<<<<<<< HEAD
-    "colorscheme": "gruvbox",
-=======
     "colorscheme": "atom-dark",
->>>>>>> 36fcbcb97b87303e0000da861b6574a7bddffe05
     "eofnewline": false,
     "fastdirty": true,
     "ignorecase": false,
