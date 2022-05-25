@@ -2,8 +2,9 @@ export EDITOR='micro'
 
 export DOT=$HOME/dotfiles
 export GOROOT=/usr/local/go
-export GOPATH=$HOME/src/go
+export GOPATH=$HOME/usr/go
 export GOPRIVATE="172.16.40.5"
+export SSH_ASKPASS="ksshaskpass"
 
 export KITTY_DISABLE_WAYLAND=1
 
