@@ -137,5 +137,3 @@ install_vim
 install_clang_format
 install_kitty
 install_i3
-# install_gnome
-# install_fish
