@@ -1,5 +1,6 @@
 {
     "autosu": true,
+    "colorscheme": "bubblegum",
     "eofnewline": false,
     "fastdirty": true,
     "ignorecase": false,
