@@ -1,6 +1,6 @@
 {
     "autosu": true,
-    "colorscheme": "bubblegum",
+    "colorscheme": "gruvbox-tc",
     "eofnewline": false,
     "fastdirty": true,
     "ignorecase": false,
