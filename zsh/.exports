@@ -8,7 +8,10 @@ export SSH_ASKPASS="ksshaskpass"
 
 export KITTY_DISABLE_WAYLAND=1
 
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin:$HOME/usr/bin:$POETRYPATH/bin
+export ZIG_HOME=$HOME/usr/share/zig/current
+export MVN_HOME=$HOME/usr/share/maven/current
+
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin:$HOME/usr/bin:$POETRYPATH/bin:$ZIG_HOME:$MVN_HOME/bin
 export PATH=$PATH:$HOME/.local/bin
 export PATH="$DENO_INSTALL/bin:$PATH"
 
