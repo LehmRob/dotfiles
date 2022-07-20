@@ -7,8 +7,9 @@ export GOPRIVATE="172.16.40.5"
 export SSH_ASKPASS="ksshaskpass"
 
 export KITTY_DISABLE_WAYLAND=1
+export ZIG_HOME=$HOME/usr/share/zig/current
 
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin:$HOME/usr/bin:$POETRYPATH/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin:$HOME/usr/bin:$POETRYPATH/bin:$ZIG_HOME
 export PATH=$PATH:$HOME/.local/bin
 export PATH="$DENO_INSTALL/bin:$PATH"
 
