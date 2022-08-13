@@ -76,16 +76,11 @@ map <Leader>w :w<cr>
 map <Leader>a :q!<cr>
 map <Leader>q :wq<cr>
 map <Leader>m :make<cr>
-map <Leader>p :!cmake --build build<CR>
-map <Leader>B :!cmake --build build<CR>
 map <Leader>nt :NERDTreeToggle<CR>
 map <Leader>f :Files<CR>
-map <Leader>M :MundoToggle
 map <Leader>l :Lines<CR>
 map <Leader>b :Buffers<CR>
 map <Leader>t :tabedit<CR>
-map <Leader>g :ALEGoToDefinition<CR>
-map <Leader>u :source ~/.config/nvim/init.vim<CR>
 
 " clear highlighted search
 map <Leader>u :<C-u>nohlsearch<CR><C-l>
