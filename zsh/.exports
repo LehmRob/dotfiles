@@ -16,3 +16,4 @@ export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:$HOME/bin:$HOME/usr/bin:$POETRYPATH/bi
 export PATH=$PATH:$HOME/.local/bin
 export PATH="$DENO_INSTALL/bin:$PATH"
 
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
