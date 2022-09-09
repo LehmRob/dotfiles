@@ -40,17 +40,17 @@ install_bin() {
     stow -R -t $HOME bin
 }
 
-install_alactritty() {
-    if [ ! -L $HOME/.config/alacritty/alacritty.yml ]; then
-        rm -rf $HOME/.config/alacritty
-    fi
-
-    if [ ! -L $HOME/.config/alacritty/theme ];then
-        rm -rf $HOME/.config/alacritty/theme
-    fi
-
-    stow -R -t $HOME alacritty
-}
+# install_alactritty() {
+    # if [ ! -L $HOME/.config/alacritty/alacritty.yml ]; then
+        # rm -rf $HOME/.config/alacritty
+    # fi
+# 
+    # if [ ! -L $HOME/.config/alacritty/theme ];then
+        # rm -rf $HOME/.config/alacritty/theme
+    # fi
+# 
+    # stow -R -t $HOME alacritty
+# }
 
 install_bash() {
     if [ ! -L $HOME/.bashrc ]; then
@@ -60,14 +60,14 @@ install_bash() {
     stow -R -t $HOME bash
 }
 
-install_spacemacs() {
-    if [ ! -L $HOME/.spacemacs ]; then
-        rm -rf $HOME/.spacemacs
-    fi
-
-    stow -R -t $HOME spacemacs
-}
-
+# install_spacemacs() {
+    # if [ ! -L $HOME/.spacemacs ]; then
+        # rm -rf $HOME/.spacemacs
+    # fi
+# 
+    # stow -R -t $HOME spacemacs
+# }
+# 
 install_micro() {
     # if [ ! -L $HOME/.config/micro/settings.json ]; then
         # rm -f $HOME/.config/micro/settings.json
@@ -94,14 +94,6 @@ install_clang_format() {
     stow -R -t $HOME clangformat
 }
 
-install_kitty() {
-    if [ ! -L $HOME/.config/kitty/kitty.conf ]; then
-        rm -rf $HOME/.config/kitty
-    fi
-
-    stow -R -t $HOME kitty 
-}
-
 install_i3() {
     if [ ! -L $HOME/.config/i3/config ]; then
         rm -f $HOME/.config/i3/config
@@ -109,19 +101,8 @@ install_i3() {
     stow -R -t $HOME i3
 }
 
-install_gnome() {
-    if [ ! -L $HOME/.config/gtk-3.0/gtk.css ]; then
-        rm -r $HOME/.config/gtk-3.0/gtk.css
-    fi
-    stow -R -t $HOME gnome
-}
-
-install_fish() {
-    if [ ! -L $HOME/.config/fish/config.fish ]; then
-        rm -f $HOME/.config/fish/config.fish
-    fi
-
-    stow -R -t $HOME fish
+install_systemd_user() {
+	stow -R -t $HOME systemd
 }
 
 git submodule update --init
@@ -130,10 +111,9 @@ install_zsh
 install_nvim
 install_tmux
 install_bin
-install_alactritty
 install_bash
 install_micro
 install_vim
 install_clang_format
-install_kitty
 install_i3
+install_systemd_user
