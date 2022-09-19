@@ -15,7 +15,7 @@ alias ...='cd ...'
 alias ....='cd ....'
 alias bat='bat --theme="base16"'
 #alias gotop='gotop -c default-dark'
-alias mc=micro
+alias mi=micro
 
 alias gt='git status'
 alias gd='git diff'
