@@ -57,8 +57,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 #export PS1="[\u@\h]:\W \\$> "
-export PS1='[$(whoami) - $(date +%H:%M:%S)]:\w 
-\\$>> '
+#export PS1='[$(whoami) - $(date +%H:%M:%S)]:\w 
+#\\$>> '
+export PS1='\u@\h:\w \$ '
 unset color_prompt force_color_prompt
 
 
