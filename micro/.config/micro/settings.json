@@ -4,10 +4,12 @@
     "colorscheme": "dukelight-tc",
     "eofnewline": false,
     "fastdirty": true,
+    "mkparents": true,
     "pluginchannels": [
         "https://raw.githubusercontent.com/micro-editor/plugin-channel/master/channel.json"
     ],
     "pluginrepos": [],
+    "relativeruler": true,
     "softwrap": true,
     "wordwrap": true
 }

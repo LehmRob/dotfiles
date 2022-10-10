@@ -57,8 +57,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 #export PS1="[\u@\h]:\W \\$> "
-export PS1='[$(whoami) - $(date +%H:%M:%S)]:\w 
-\\$>> '
+#export PS1='[$(whoami) - $(date +%H:%M:%S)]:\w 
+#\\$>> '
+export PS1='\u@\h:\w \$ '
 unset color_prompt force_color_prompt
 
 
@@ -123,6 +124,3 @@ fi
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
-
-eval "$(thefuck --alias)"
-. "$HOME/.cargo/env"

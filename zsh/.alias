@@ -13,7 +13,7 @@ alias scp6='scp -6'
 alias ..='cd ..'
 alias ...='cd ...'
 alias ....='cd ....'
-alias bat='bat --theme="base16"'
+alias bat='bat --theme="GitHub"'
 #alias gotop='gotop -c default-dark'
 alias mi=micro
 
