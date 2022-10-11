@@ -1,0 +1,11 @@
+todo() {
+	todo_dir=$HOME/Todo
+	today=$(date --rfc-3339=date)
+	if [ -d $todo_dir ]; then
+		mkdir $todo_dir
+	fi
+	
+	$EDITOR $todo_dir/todo_$today.md
+}
+
+export todo

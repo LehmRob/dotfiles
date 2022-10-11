@@ -57,6 +57,10 @@ install_bash() {
         mv $HOME/.bashrc $HOME/.bashrc.backup
     fi
 
+    if [ ! -L $HOME/.functions ]; then
+    	rm $HOME/.functions
+    fi
+
     stow -R -t $HOME bash
 }
 
