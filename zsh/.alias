@@ -18,6 +18,8 @@ alias bat='bat --theme="GitHub"'
 alias mi=micro
 
 alias gt='git status'
+alias ga='git add'
+alias gai='git add -i'
 alias gd='git diff'
 alias glo='git log --oneline'
 alias glog='git log --oneline --graph'
