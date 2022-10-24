@@ -105,6 +105,8 @@ install_i3() {
     stow -R -t $HOME i3
 }
 
+install_user_
+
 install_systemd_user() {
 	stow -R -t $HOME systemd
 }

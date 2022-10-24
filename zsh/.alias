@@ -2,8 +2,12 @@ alias t="tmux -2 -u"
 alias tns="tmux -2 -u new-session -s"
 alias tls="tmux -2 list-session"
 alias tas="tmux -2 attach -t"
-#alias ls="ls --color=never"
+
 alias ls="exa"
+alias ll='ls -alF'
+alias la='ls -a'
+alias l='exa -F'
+
 alias sshno='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o HostKeyAlgorithms=+ssh-rsa'
 alias scpno='scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o HostKeyAlgorithms=+ssh-rsa'
 alias ssh6n='ssh -6 -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o HostKeyAlgorithms=+ssh-rsa'
