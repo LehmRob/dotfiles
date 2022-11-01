@@ -2,7 +2,6 @@ set ai
 set hidden
 set icon
 set relativenumber
-"set nonu 
 set showmatch
 set showcmd
 set incsearch
@@ -57,9 +56,6 @@ au FileType javascript set sts=2
 
 filetype plugin on
 
-" Some key mappings
-inoremap jj <ESC>
-
 let mapleader = ","
 map <Leader>s :split<cr>
 map <Leader>v :vsplit<cr>
@@ -69,5 +65,5 @@ map <Leader>q :wq<cr>
 map <Leader>m :make<cr>
 map <Leader>t :tabedit<CR>
 
-set termguicolors
 set background=light
+set syntax=on
