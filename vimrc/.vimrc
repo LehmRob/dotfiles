@@ -65,5 +65,5 @@ map <Leader>q :wq<cr>
 map <Leader>m :make<cr>
 map <Leader>t :tabedit<CR>
 
+syntax on
 set background=light
-set syntax=on

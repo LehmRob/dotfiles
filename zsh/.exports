@@ -1,4 +1,4 @@
-export EDITOR='micro'
+export EDITOR='vim'
 
 export DOT=$HOME/dotfiles
 export GOROOT=/usr/local/go
