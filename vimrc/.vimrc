@@ -67,3 +67,4 @@ map <Leader>t :tabedit<CR>
 
 syntax on
 set background=light
+colorscheme shine
