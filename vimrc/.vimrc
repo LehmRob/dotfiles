@@ -42,7 +42,6 @@ au FileType cpp set sts=4
 au FileType c set sw=4
 au FileType c set ts=4
 au FileType c set sts=4
-au FileType c ClangFormatAutoDisable
 au FileType python setlocal noexpandtab
 au FileType python set sw=4
 au FileType python set ts=4
@@ -64,7 +63,11 @@ map <Leader>a :q!<cr>
 map <Leader>q :wq<cr>
 map <Leader>m :make<cr>
 map <Leader>t :tabedit<CR>
+map <Leader>bn :bn<cr>
+map <Leader>b :buffers<cr> :buf 
 
 syntax on
 set background=light
 colorscheme shine
+
+set laststatus=2
