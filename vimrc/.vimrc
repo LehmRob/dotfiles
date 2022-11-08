@@ -66,5 +66,5 @@ map <Leader>m :make<cr>
 map <Leader>t :tabedit<CR>
 
 syntax on
-set background=light
-colorscheme shine
+set background=dark
+colorscheme habamax
