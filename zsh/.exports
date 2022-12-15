@@ -1,7 +1,7 @@
 export HISTFILESIZE=
 export HISTSIZE=
 export HISTTIMEFORMAT="[%F %T] "
-export EDITOR='vim'
+export EDITOR='hx'
 
 export DOT=$HOME/dotfiles
 export GOROOT=/usr/local/go
