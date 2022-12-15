@@ -105,7 +105,12 @@ install_i3() {
     stow -R -t $HOME i3
 }
 
-install_user_
+install_helix() {
+    if [ ! -L $HOME/.config/helix/config.toml ]; then
+        rm -f $HOME/.config/helix/config.toml
+    fi
+    stow -R -t $HOME helix
+}
 
 install_systemd_user() {
 	stow -R -t $HOME systemd
@@ -123,3 +128,4 @@ install_vim
 install_clang_format
 install_i3
 install_systemd_user
+install_helix
