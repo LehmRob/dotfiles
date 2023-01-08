@@ -1,7 +1,6 @@
 set ai
 set hidden
 set icon
-"set relativenumber
 set showmatch
 set showcmd
 set incsearch
@@ -53,6 +52,13 @@ au FileType javascript set sw=2
 au FileType javascript set ts=2
 au FileType javascript set sts=2
 
+" only load plugins if Plug detected
+if filereadable(expand("~/.vim/autoload/plug.vim"))
+    call plug#begin('~/.local/share/vim/plugins')
+    Plug 'morhetz/gruvbox'
+    call plug#end()
+endif
+
 filetype plugin on
 
 let mapleader = ","
@@ -68,6 +74,6 @@ map <Leader>b :buffers<cr> :buf
 
 syntax on
 set background=dark
-colorscheme habamax
+colorscheme gruvbox
 
 set laststatus=2
