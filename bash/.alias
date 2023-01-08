@@ -3,10 +3,17 @@ alias tns="tmux -2 -u new-session -s"
 alias tls="tmux -2 list-session"
 alias tas="tmux -2 attach -t"
 
-alias ls="exa"
+
+exa --version 2> /dev/null
+if [ $? -eq 0 ]; then
+    alias ls="exa --icons"
+    alias l='exa --icons -F'
+else
+    alias l='ls'
+fi
+
 alias ll='ls -alF'
 alias la='ls -a'
-alias l='exa -F'
 
 alias sshno='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o HostKeyAlgorithms=+ssh-rsa'
 alias scpno='scp -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -o HostKeyAlgorithms=+ssh-rsa'
