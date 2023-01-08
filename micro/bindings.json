@@ -1,0 +1,8 @@
+{
+    "Alt-/": "lua:comment.comment",
+    "AltZ": "Suspend",
+    "CtrlAltZ": "Suspend",
+    "CtrlP": "command:fzf",
+    "CtrlUnderscore": "lua:comment.comment",
+    "F6": "command-edit:gorename "
+}

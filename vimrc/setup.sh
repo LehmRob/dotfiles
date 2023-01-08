@@ -1,0 +1,3 @@
+#!/bin/sh
+
+ln -sf "$PWD/.vimrc" "$HOME/.vimrc"
