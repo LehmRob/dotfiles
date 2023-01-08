@@ -1,6 +1,0 @@
-#!/bin/sh
-
-for key_file in $(find ~/.ssh -type f | grep .pub | sed 's/\.pub//'); do
-	echo "Unlocking $key_file"
-	ssh-add $key_file
-done

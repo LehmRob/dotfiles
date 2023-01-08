@@ -1,4 +1,0 @@
-# Default configuration can be found at https://github.com/helix-editor/helix/blob/master/languages.toml
-[[language]]
-name = "bash"
-indent = { tab-width = 4, unit = "    " }

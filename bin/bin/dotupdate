@@ -1,6 +1,0 @@
-#!/bin/sh
-
-cd $DOT && \
-    git commit -a -m "Update dotfiles"; \
-    git pull origin master && \
-    git push origin master
