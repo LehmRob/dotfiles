@@ -4,7 +4,7 @@ alias tls="tmux -2 list-session"
 alias tas="tmux -2 attach -t"
 
 
-exa --version 2> /dev/null
+exa --version > /dev/null 2>&1
 if [ $? -eq 0 ]; then
     alias ls="exa --icons"
     alias l='exa --icons -F'
