@@ -56,6 +56,7 @@ au FileType javascript set sts=2
 if filereadable(expand("~/.vim/autoload/plug.vim"))
     call plug#begin('~/.local/share/vim/plugins')
     Plug 'morhetz/gruvbox'
+
     call plug#end()
 endif
 
@@ -77,3 +78,11 @@ set background=dark
 colorscheme gruvbox
 
 set laststatus=2
+
+set statusline=
+set statusline+=[%n]\ %f\ %m\ %r
+set statusline+=%=
+set statusline+=%5(Line\ %l/%L%)
+set statusline+=\ %5(Perc\ %p%%%)
+set statusline+=\ %5(Col\ %v%)
+
