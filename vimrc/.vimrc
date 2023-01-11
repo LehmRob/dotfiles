@@ -56,6 +56,7 @@ au FileType javascript set sts=2
 if filereadable(expand("~/.vim/autoload/plug.vim"))
     call plug#begin('~/.local/share/vim/plugins')
     Plug 'morhetz/gruvbox'
+    Plug 'catppuccin/vim'
 
     call plug#end()
 endif
@@ -75,7 +76,7 @@ map <Leader>b :buffers<cr> :buf
 
 syntax on
 set background=dark
-colorscheme gruvbox
+colorscheme catppuccin_frappe
 
 set laststatus=2
 
