@@ -5,7 +5,7 @@
 
 set -x
 
-for d in bash bin micro systemd tmux vimrc; do
+for d in bash bin micro systemd tmux vimrc konsole; do
     cd $d && ./setup.sh
     cd -
 done
