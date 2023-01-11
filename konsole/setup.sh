@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -x
+
 symlink_file() {
     src="$1"
     dst="$2"
@@ -14,8 +16,8 @@ if [ ! -d $install_dir ]; then
     mkdir -p $install_dir
 fi
 
-symlink_file $PWD/themes/catpuccin $install_dir Catppuccin-Frappe.colorscheme
-symlink_file $PWD/themes/catpuccin $install_dir Catppuccin-Latte.colorscheme
-symlink_file $PWD/themes/catpuccin $install_dir Catppuccin-Macchiato.colorscheme
-symlink_file $PWD/themes/catpuccin $install_dir Catppuccin-Mocha.colorscheme
+symlink_file $PWD/themes/catppuccin $install_dir Catppuccin-Frappe.colorscheme
+symlink_file $PWD/themes/catppuccin $install_dir Catppuccin-Latte.colorscheme
+symlink_file $PWD/themes/catppuccin $install_dir Catppuccin-Macchiato.colorscheme
+symlink_file $PWD/themes/catppuccin $install_dir Catppuccin-Mocha.colorscheme
 

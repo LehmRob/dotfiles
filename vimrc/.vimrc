@@ -51,6 +51,9 @@ au FileType html set sts=2
 au FileType javascript set sw=2
 au FileType javascript set ts=2
 au FileType javascript set sts=2
+au FileType markdown set sw=2
+au FileType markdown set ts=2
+au FileType markdown set sts=2
 
 " only load plugins if Plug detected
 if filereadable(expand("~/.vim/autoload/plug.vim"))
@@ -81,9 +84,8 @@ colorscheme catppuccin_frappe
 set laststatus=2
 
 set statusline=
-set statusline+=[%n]\ %f\ %m\ %r
 set statusline+=%=
-set statusline+=%5(Line\ %l/%L%)
-set statusline+=\ %5(Perc\ %p%%%)
-set statusline+=\ %5(Col\ %v%)
+set statusline+=[%n]\ %f\ %m\ %r\ %y
+set statusline+=\ %5(%l:%v%)
+set statusline+=\ %5(%p%%%)
 
