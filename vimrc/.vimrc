@@ -84,8 +84,8 @@ colorscheme catppuccin_frappe
 set laststatus=2
 
 set statusline=
-set statusline+=%=
 set statusline+=[%n]\ %f\ %m\ %r\ %y
+set statusline+=%=
 set statusline+=\ %5(%l:%v%)
 set statusline+=\ %5(%p%%%)
 
