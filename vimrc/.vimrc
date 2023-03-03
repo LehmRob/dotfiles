@@ -58,8 +58,10 @@ au FileType markdown set sts=2
 " only load plugins if Plug detected
 if filereadable(expand("~/.vim/autoload/plug.vim"))
     call plug#begin('~/.local/share/vim/plugins')
-    Plug 'morhetz/gruvbox'
+    Plug 'kristijanhusak/vim-hybrid-material'
+    Plug 'NLKNguyen/papercolor-theme'
     Plug 'catppuccin/vim'
+    Plug 'nblock/vim-dokuwiki'
 
     call plug#end()
 endif
@@ -72,14 +74,18 @@ map <Leader>v :vsplit<cr>
 map <Leader>w :w<cr>
 map <Leader>a :q!<cr>
 map <Leader>q :wq<cr>
-map <Leader>m :make<cr>
 map <Leader>t :tabedit<CR>
 map <Leader>bn :bn<cr>
 map <Leader>b :buffers<cr> :buf 
+map <Leader>p "+p
+map <Leader>y "+y
+map <Leader>ftm :set filetype=markdown<cr>
+map <Leader>ftd :set filetype=dokuwiki<cr>
 
+set termguicolors
 syntax on
-set background=dark
-colorscheme catppuccin_frappe
+set background=light
+colorscheme PaperColor
 
 set laststatus=2
 

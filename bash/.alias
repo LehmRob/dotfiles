@@ -25,7 +25,7 @@ alias scp6='scp -6'
 alias ..='cd ..'
 alias ...='cd ...'
 alias ....='cd ....'
-alias bat='bat --theme="1337"'
+alias bat='bat --theme="gruvbox-light"'
 #alias gotop='gotop -c default-dark'
 alias mi=micro
 
