@@ -82,7 +82,13 @@ map <Leader>y "+y
 map <Leader>ftm :set filetype=markdown<cr>
 map <Leader>ftd :set filetype=dokuwiki<cr>
 
-set termguicolors
+if exists("$TMUX")
+    set t_Co=256
+    set notermguicolors
+else
+    set termguicolors
+endif
+
 syntax on
 set background=light
 colorscheme PaperColor
