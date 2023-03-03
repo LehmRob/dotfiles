@@ -82,6 +82,7 @@ map <Leader>y "+y
 map <Leader>ftm :set filetype=markdown<cr>
 map <Leader>ftd :set filetype=dokuwiki<cr>
 
+# make colors for tmux over ssh sessions looking right
 if exists("$TMUX")
     set t_Co=256
     set notermguicolors
